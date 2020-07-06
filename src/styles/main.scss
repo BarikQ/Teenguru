@@ -1,0 +1,68 @@
+@import "./abstracts/mixin";
+@import "./abstracts/typography";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  background: #F5F3FA;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: unset;
+  font-family: "Roboto";
+
+  .text-purple {
+    font-family: "Roboto";
+    font-weight: 700;
+  }
+
+  .text-pink {
+    font-family: "Roboto";
+    font-weight: bold;
+  }
+}
+
+.text-purple {
+  color: #492996;
+}
+
+.text-pink {
+  color: #F2386E;
+}
+
+.routes {
+  background: #EDEAF5;
+  font-weight: 500;
+  font-size: 12px;
+
+  ul {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 14px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  a {
+    color: #292929;
+  }
+
+  .route-current {
+    color: #492996;
+  }
+
+  .route:not(:last-child)::after {
+    content: "/";
+    margin: 0 5px;
+  }
+}
