@@ -13,6 +13,7 @@
 
 .social__list {
   display: flex;
+  align-items: center;
 }
 
 .footer__brand {
@@ -30,4 +31,8 @@
     font-size: 14px;
     line-height: 17px;
   }
+}
+
+.social__item {
+  margin: 0 15px;
 }

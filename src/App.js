@@ -13,6 +13,7 @@ import { ReactComponent as Product } from "./assets/images/modules/dist/product.
 import { ReactComponent as Auction } from "./assets/images/modules/dist/auction.svg";
 import { ReactComponent as Control } from "./assets/images/modules/dist/control.svg";
 import { ReactComponent as Lock } from "./assets/images/modules/dist/Lock.svg";
+import { ReactComponent as Arrow } from "./assets/images/arrow.svg";
 
 function App() {
   return (
