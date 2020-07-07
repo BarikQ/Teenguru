@@ -11,9 +11,11 @@ export default function Header() {
   return (
     <header className="header">
       <h1 className="brand__title header__brand">
-        <span className="text-purple">Бизнес </span>
-        <span>Академия </span>
-        <span className="text-pink">TeenGuru</span>
+        <a href="localhost:3000">
+          <span className="text-purple">Бизнес </span>
+          <span>Академия </span>
+          <span className="text-pink">TeenGuru</span>
+        </a>
       </h1>
 
       <div className="header__logos">

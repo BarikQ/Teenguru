@@ -7,6 +7,12 @@
   align-items: center;
 }
 
+.header__brand {
+  a {
+    color: black;
+  }
+}
+
 .header__logos {
   /* width: 246px; */
   display: flex;

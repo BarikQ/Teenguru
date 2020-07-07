@@ -66,3 +66,24 @@ h1 {
     margin: 0 5px;
   }
 }
+
+.button-def {
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 61px;
+  height: 41px;
+  padding: 12px 18px;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button,
+button:hover {
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}

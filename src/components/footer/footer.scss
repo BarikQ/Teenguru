@@ -1,0 +1,33 @@
+.footer {
+  background: #00092B;
+}
+
+.footer__container {
+  padding: 20px 0;
+  margin: 0 auto;
+  max-width: 1240px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social__list {
+  display: flex;
+}
+
+.footer__brand {
+  a {
+    color: white;
+  }
+
+  color: white;
+}
+
+.footer__links {
+  a {
+    color: white;
+    margin: 0 25px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
