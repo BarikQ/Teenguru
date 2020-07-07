@@ -1,6 +1,11 @@
 import React from "react";
+import AliceCarousel from 'react-alice-carousel'
+import Gallery from "./components/gallery/gallery"
+
+
 import "./styles/main.scss";
 import "./styles/pages/modules/modules.scss";
+import 'react-alice-carousel/lib/alice-carousel.css'
 
 import { Header, Footer } from "./components/index";
 
@@ -402,6 +407,8 @@ function App() {
               </div>
             </div>
           </div>
+
+          <Gallery />
 
           <div className="skill__all">
             <span className="module__price text-price">
