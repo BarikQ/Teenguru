@@ -1,5 +1,8 @@
+@import "./../../styles/abstracts/mixin";
+
 .footer {
   background: #00092B;
+  @include media((padding: (laptop: 0 40px)));
 }
 
 .footer__container {
@@ -9,6 +12,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include media((flex-direction: (tablet: column), text-align: (tablet: center)));
 }
 
 .social__list {
@@ -31,6 +35,8 @@
     font-size: 14px;
     line-height: 17px;
   }
+
+  @include media((margin: (tablet: 20px)));
 }
 
 .social__item {

@@ -1,3 +1,5 @@
+@import "./../../styles/abstracts/mixin";
+
 .header {
   padding: 20px 0;
   margin: 0 auto;
@@ -5,12 +7,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  @include media((padding: (laptop: 20px 40px, tablet: 20px 0),
+      flex-direction: (tablet: column),
+      text-align: (tablet: center)));
 }
 
 .header__brand {
   a {
     color: black;
   }
+
+  @include media((margin: (tablet: 0 0 15px),
+      font-size: (tablet: 24px)));
 }
 
 .header__logos {
@@ -22,6 +31,10 @@
   top: 2px;
   left: -53px;
 
+  @include media((left: (tablet: 0,
+      ),
+    ));
+
   .teenguru {
     margin: 0 31px;
   }
@@ -30,6 +43,14 @@
 .header__user {
   display: flex;
   align-items: center;
+  @include media((position: (tablet: unset,
+      ),
+      right: (tablet: 50px,
+      ),
+      top: (tablet: 30px,
+      ),
+      align-self: (tablet: flex-end),
+      margin: (tablet: 20px 15px 0 0)));
 }
 
 .user-name {

@@ -27,16 +27,24 @@ export default function Footer() {
         <div className="footer__socials">
           <ul className="social__list">
             <li className="social__item">
-              <VkIcon />
+              <a href="localhost:3000" target="_blank" rel="noopener noreferrer">
+                <VkIcon />
+              </a>
             </li>
             <li className="social__item">
-              <FbIcon />
+              <a href="localhost:3000" target="_blank" rel="noopener noreferrer">
+                <FbIcon />
+              </a>
             </li>
             <li className="social__item">
-              <InstIcon />
+              <a href="localhost:3000" target="_blank" rel="noopener noreferrer">
+                <InstIcon />
+              </a>
             </li>
             <li className="social__item">
-              <InIcon />
+              <a href="localhost:3000" target="_blank" rel="noopener noreferrer">
+                <InIcon />
+              </a>
             </li>
           </ul>
         </div>

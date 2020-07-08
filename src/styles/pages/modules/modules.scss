@@ -147,7 +147,7 @@ h1 {
   align-items: center;
   margin-top: 40px;
 
-  .button__border {
+  .button__wrap {
     margin-left: 12px;
   }
 }
@@ -157,7 +157,7 @@ h1 {
   bottom: 10px;
 }
 
-.button__border {
+.button__wrap {
   background: linear-gradient(45deg, rgba(243, 56, 110, 1) 11%, rgba(75, 41, 149, 1) 100%);
   border-radius: 41px;
   padding: 2px;
@@ -180,7 +180,7 @@ h1 {
   .module__button-buy,
   .module__price,
   .module__lock,
-  .button__border {
+  .button__wrap {
     display: none;
   }
 }
@@ -204,7 +204,7 @@ h1 {
   .module__button-buy,
   .module__price,
   .module__button-start,
-  .button__border {
+  .button__wrap {
     display: none;
   }
 }
@@ -221,6 +221,13 @@ h1 {
     .module__button-start {
       border: 2px solid white;
       color: white;
+      transition: 0.2s ease all;
+    }
+
+    .module__button-start:hover {
+      background: white;
+      color: #F2386E;
+      transition: 0.2s ease all;
     }
 
     path {
@@ -295,9 +302,9 @@ h1 {
   padding: 15px 15px 20px;
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
-  display: grid;
+  display: grid !important;
   grid-template: 50px auto auto / 1fr;
-  min-height: 345px;
+  min-height: 355px;
   max-width: 194px;
 }
 
@@ -307,6 +314,10 @@ h1 {
 
 .slick-slide>div {
   padding: 0 15px;
+}
+
+.slick-slider {
+  display: none;
 }
 
 // .slick-slide {

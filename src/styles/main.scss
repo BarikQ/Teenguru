@@ -6,7 +6,7 @@
   padding: 0;
 }
 
-#root {
+body {
   background: #F5F3FA;
 }
 
@@ -43,6 +43,7 @@ h1 {
   background: #EDEAF5;
   font-weight: 500;
   font-size: 12px;
+  @include media((padding: (laptop: 0 40px, tablet: 0 20px)));
 
   ul {
     max-width: 1240px;
@@ -79,6 +80,72 @@ h1 {
   align-items: center;
 }
 
+.button__wrap {
+  background: linear-gradient(45deg, rgba(243, 56, 110, 1) 11%, rgba(75, 41, 149, 1) 100%);
+  border-radius: 41px;
+  padding: 2px;
+  width: fit-content;
+  display: flex;
+
+  button,
+  a {
+    border: none;
+    background: white;
+    transition: 0.2s ease all;
+
+    span {
+      background: linear-gradient(45deg, rgba(243, 56, 110, 1) 11%, rgba(75, 41, 149, 1) 100%);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      transition: 0.2s ease all;
+    }
+  }
+
+  a {
+    display: block;
+    color: white;
+  }
+}
+
+.callback__button {
+  border-radius: 41px;
+  padding: 12px 18px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.callback__container {
+  margin-top: 20px;
+  display: flex;
+  white-space: nowrap;
+  flex-wrap: wrap;
+
+  .button__wrap {
+    @include media((margin: (tablet: 5px 0)));
+  }
+
+  .button__wrap:nth-child(1),
+  .button__wrap:nth-child(2) {
+    margin-right: 10px;
+  }
+}
+
+.button__wrap:hover {
+
+  button,
+  a {
+    background: transparent;
+    transition: 0.2s ease all;
+
+    span {
+      color: white;
+      -webkit-text-fill-color: unset;
+      transition: 0.2s ease all;
+    }
+  }
+}
+
 button,
 button:hover {
   cursor: pointer;
@@ -86,4 +153,79 @@ button:hover {
 
 button:focus {
   outline: none;
+}
+
+.module__number {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.module__title {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.main {
+  @include media((padding: (laptop: 0 40px)));
+}
+
+
+
+.arrows__container {
+  display: flex;
+  margin-top: 8px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #E8EAEF;
+
+  .page__arrow {
+    width: 40px;
+    height: 40px;
+    border-radius: 41px;
+    position: relative;
+
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 48%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .border-next {
+    transform: rotate(180deg);
+    margin-left: 28px;
+  }
+}
+
+.button__wrap:hover {
+  svg {
+    path {
+      stroke: white !important;
+    }
+  }
+}
+
+.column__article {
+  position: relative;
+}
+
+.article__title-wrap {
+  @include media((padding: (desktop: 40px 0 60px, tablet: 40px 0 20px)));
+}
+
+.article__title {
+  position: relative;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 110.19%;
+  letter-spacing: 0.035em;
+  color: #492996;
+  z-index: 10;
+  @include media((left: (desktop: 26px, tablet: 0)));
+}
+
+.title__figure {
+  position: absolute;
+  z-index: 5;
+  @include media((top: (desktop: 0, tablet: 10px), left: (tablet: -40px)));
 }

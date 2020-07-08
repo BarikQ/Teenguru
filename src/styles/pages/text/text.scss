@@ -1,0 +1,278 @@
+@import "./../../abstracts/mixin";
+
+.main {
+  max-width: 1240px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  @include media((padding: (desktop: 40px 0,
+        laptop: 40px,
+        tablet: 20px),
+      flex-direction: (tablet: column,
+      ),
+    ));
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.menu__column-left {
+  width: fit-content;
+  margin-right: 10px;
+}
+
+.menu__column-right {
+  margin-left: 10px;
+}
+
+.menu__title {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 32px;
+  color: #f2386e;
+}
+
+.menu__checkbox {
+  display: none;
+}
+
+.menu__checkbox:checked~.modules__menu {
+  margin-left: 0;
+  left: 0;
+  display: block;
+  transition: 0.2s ease all;
+}
+
+.modules__menu {
+  margin-left: -100%;
+  left: -100%;
+  width: 296px;
+  padding: 20px 8px 12px;
+  position: relative;
+  top: -20px;
+  background: #edeaf5;
+  border-radius: 0px 10px 10px 0px;
+  transition: 0.2s ease all;
+  overflow: hidden;
+  display: none;
+}
+
+.menu__module-open {
+  .module__lock {
+    display: none;
+  }
+}
+
+.menu__module-close {
+  background: #dfdbea;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.05);
+
+  .module__arrow {
+    display: none;
+  }
+}
+
+.menu__open {
+  display: flex;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.menu__button-open {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: #212121;
+  border-radius: 2px;
+  position: relative;
+}
+
+.menu__button-open::after,
+.menu__button-open::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: #212121;
+  border-radius: 2px;
+  position: absolute;
+}
+
+.menu__button-open::after {
+  top: 6px;
+}
+
+.menu__button-open::before {
+  bottom: 6px;
+}
+
+.menu__close {
+  display: flex;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 20px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.menu__button-close {
+  display: block;
+  width: 20px;
+  height: 2px;
+  border-radius: 2px;
+  position: relative;
+  background: transparent;
+}
+
+.menu__button-close::after,
+.menu__button-close::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: #212121;
+  border-radius: 2px;
+  position: absolute;
+}
+
+.menu__button-close::after {
+  transform: rotate(45deg);
+}
+
+.menu__button-close::before {
+  transform: rotate(-45deg);
+}
+
+.menu__title {
+  margin-left: 12px;
+  position: relative;
+  top: -5px;
+  z-index: 5;
+}
+
+.menu__module {
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 12px 12px 20px;
+}
+
+.menu__module-open {
+  background: #ffffff;
+
+  .module__title,
+  .module__number {
+    color: #f2386e;
+  }
+}
+
+.module__title {
+  margin-top: 2px;
+}
+
+.module__contents-open:checked~.module__contents {
+  display: unset;
+}
+
+.module__contents-open:checked+.module__label {
+  border-bottom: 2px solid #e8eaef;
+  padding-bottom: 18px;
+
+  .module__arrow {
+    transform: rotate(180deg);
+  }
+}
+
+.module__contents {
+  display: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.module__label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.content__list {
+  margin-top: 12px;
+  padding-left: 15px;
+  list-style-type: decimal;
+}
+
+.list__item {
+  margin-bottom: 3px;
+}
+
+.content__list {
+  .list__item-test {
+    position: relative;
+  }
+
+  .list__item-test:last-child::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -16px;
+    top: 5px;
+    background: white;
+    width: 12px;
+    height: 10px;
+  }
+}
+
+.list__item-active {
+  font-weight: bold;
+}
+
+.article__text {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.035em;
+
+  p {
+    margin: 10px 0;
+  }
+}
+
+.arrows__container {
+  display: flex;
+  margin-top: 8px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #e8eaef;
+
+  .page__arrow {
+    width: 40px;
+    height: 40px;
+    border-radius: 41px;
+    position: relative;
+
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 48%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .border-next {
+    transform: rotate(180deg);
+    margin-left: 28px;
+  }
+}
+
+.button__wrap:hover {
+  svg {
+    path {
+      stroke: white !important;
+    }
+  }
+}
