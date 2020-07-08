@@ -120,6 +120,7 @@ export default function Menu() {
                 type="checkbox"
                 name=""
                 id="module-3"
+                disabled
               />
 
               <label className="module__label" htmlFor="module-3">
@@ -164,6 +165,7 @@ export default function Menu() {
                 type="checkbox"
                 name=""
                 id="module-4"
+                disabled
               />
 
               <label className="module__label" htmlFor="module-4">
@@ -208,6 +210,7 @@ export default function Menu() {
                 type="checkbox"
                 name=""
                 id="module-5"
+                disabled
               />
 
               <label className="module__label" htmlFor="module-5">
