@@ -2,14 +2,10 @@
 
 .callback__button {
   border-radius: 41px;
-  padding: 12px 18px;
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
   text-align: center;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
 
   span {
     display: flex;
@@ -21,6 +17,8 @@
       left: 10px;
     }
   }
+
+  @include media((padding: (desktop: 12px 50px, mobile: 12px 0)));
 }
 
 .callback__container {
