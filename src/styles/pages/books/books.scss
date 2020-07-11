@@ -14,7 +14,13 @@
 }
 
 .menu__column-right {
+  width: 100%;
+
   @include media((margin-top: (laptop: 20px)));
+}
+
+.article__title {
+  @include media((font-size: (desktop: 36px, tablet: 30px, mobile: 26px)));
 }
 
 .book__list-item {
@@ -26,7 +32,10 @@
   max-height: 426px;
   width: 100%;
   height: auto;
-  @include media((padding: (tablet: 15px), align-self: (tablet: center)));
+  @include media((max-width: (desktop: 295px, mobile: unset),
+      max-height: (desktop: 426px, mobile: unset),
+      padding: (tablet: 15px),
+      align-self: (tablet: center)));
 }
 
 .book__text {
@@ -36,10 +45,27 @@
 
 .book__title {
   font-weight: bold;
-  font-size: 36px;
-  line-height: 44px;
   letter-spacing: 0.03em;
   color: #f2386e;
+
+  @include media((display: (tablet: none),
+      font-size: (desktop: 36px, tablet: 30px, mobile: 26px),
+      line-height: (desktop: 44px, tablet: 24px)));
+}
+
+.book__title-mobile {
+  margin-top: 15px;
+
+  .book__title {
+    display: flex;
+  }
+
+  .book__author {
+    margin-top: 8px;
+    display: flex;
+  }
+
+  @include media((display: (desktop: none, tablet: unset)));
 }
 
 .book__author {
@@ -50,6 +76,8 @@
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #492996;
+
+  @include media((display: (tablet: none)));
 }
 
 .book__description-wrap {
@@ -98,6 +126,8 @@
 }
 
 .article__books {
+  margin-top: 20px;
+
   .book__list-item:not(:last-child) {
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   }

@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./styles/main.scss";
-import "./styles/pages/article/article.scss";
+import "./styles/pages/books/books.scss";
 
 import { Header, Footer, Menu, ArticleList, Callback, NavArrows, RouteLine, Strengths, ModuleBox, Table } from "./components";
 
@@ -10,6 +10,7 @@ import { ReactComponent as ArrowBlack } from "./assets/images/arrow_black.svg";
 import { ReactComponent as Arrow } from "./assets/images/arrow.svg";
 import { ReactComponent as Clock } from "./assets/images/clock.svg";
 import { ReactComponent as Quote } from "./assets/images/quote.svg";
+import { ReactComponent as Telegram } from "./assets/images/telegram.svg";
 
 import Book1Src from "./assets/images/books/book_1.png";
 import Book2Src from "./assets/images/books/book_2.png";
@@ -36,173 +37,176 @@ function App() {
               <img className="title__figure" src={CircleSrc} alt="" />
 
               <h3 className="article__title">
-                Статья. <br />
-                <span className="article__title-sub">5 советов, которые помогут вам начать бизнес</span>
+                Топ - 3 книг для развития мышления
               </h3>
             </div>
 
-            <div className="article__content">
+            <div className="article__books">
+              <div className="book__list-item">
+                <div className="book__title-mobile">
+                  <h4 className="book__title">Гибкое сознание</h4>
 
-              <div className="article__block">
-                <div className="article__timing">
-                  <Clock className="timig__icon" />
-
-                  <h4 className="article__intro">5 минут чтения</h4>
+                  <span className="book__author">Кэрол Дуэк</span>
                 </div>
 
-                <p className="block__paragraph">
-                  От продажи домашнего лимонада на улице за бешеные деньги до чистки семейного автомобиля — это действия предпринимателя-подростка, разминающего свои преждевременные бизнес-мускулы.
-                </p>
+                <img src={Book1Src} alt="" className="book__image" />
 
-                <p className="block__paragraph">
-                  Но по мере того, как мы взрослеем, по ряду причин большинство из нас перестают продолжать эти предпринимательские эксперименты. Почему? Почему мы рано или поздно останавливаемся? Перестаем рисковать? Мечтать? Пробовать? В конце концов, нужна всего одна хорошая идея (возможно, после нескольких неудачных идей), ну а пока ...
-                </p>
+                <div className="book__text">
+                  <h4 className="book__title">Гибкое сознание</h4>
 
-                <p className="block__paragraph">
-                  БУМ! Страйк! Внезапно известный блогер делает с вами интервью и вас приглашают в дом Илона Маска на званый обед... Почему нет? Ну, возможно, нет, но мы уверены, что ваша мама будет очень горда и сделает кучу фотографий и пригласит вас по крайней мере из вашей спальни на ужин. Это мило, правда?
-                </p>
+                  <span className="book__author">Кэрол Дуэк</span>
 
-                <p className="block__paragraph">
-                  Двигаемся дальше....
-                </p>
+                  <p className="book__description-wrap">
+                    <span className="book__description-about">О чём?</span>
+                    <p className="book__description">
+                      О том, что интеллект и талант - это не все что вам нужно
+                      для успеха и том как таланты могут стать преградой на пути
+                      к нему. Талантливые люди пытаются доказать всем, как они
+                      умны и талантливы, вместо того, чтобы развивать их. Кроме
+                      того, они верят, что талант ведет к успеху сам по себе. И
+                      они ошибаются. Переход к гибкому сознанию усиливает
+                      мотивацию и продуктивность в бизнесе, образовании и
+                      спорте. Он обогащает личные отношения.
+                    </p>
+                    <span className="book__description-about">
+                      Когда вы прочитаете эту книгу, вы узнаете как это
+                      происходит. Купить можно здесь:
+                    </span>
+                  </p>
 
-                <p className="block__paragraph">
-                  Помимо всего блеска и гламура, старт собственного бизнеса может дать нечто большее, что не всегда можно измерить деньгами. Его истинная ценность заключается в том, что вы извлекаете уроки из этого опыта, особенно когда вы еще подросток.
-                </p>
-
-                <p className="block__paragraph">
-                  Редко, если вообще когда-либо, ваше первое коммерческое начинание превратится в прибыльный бизнес. Хотя это вполне возможно, и было бы здорово, конечно. Но, несмотря на то, что ваш первый бизнес может потерпеть неудачу, вы получите бесценный опыт, который поможет вам добиться успеха в будущем. Так зачем откладывать? Начните бизнес сегодня!
-                </p>
-
-                <p className="block__paragraph">
-                  Серьезно, средняя школа — лучшее место и время для вас, чтобы начать свой бизнес! Вам не нужно думать о банковском счете, потому что, скорее всего, вы еще живете с родителями. Так что вы можете просто сосредоточиться на накоплении опыта, развитии своей идеи и создании своего резюме.
-                  Более того, открытие бизнеса в старших классах может сделать вас очень желанными в некоторых лучших колледжах и университетах мира!
-                  Но прежде чем мы перейдем к урокам по построению бизнеса, давайте посмотрим, что вам может сделать первый шаг.
-                </p>
+                  <a
+                    href="https://oz.by/books/more10321131.html?sbtoken=2e56e15bbccb5c6c240a51da0d725ff2"
+                    className="book__link"
+                  >
+                    https://oz.by/books/more10321131.html?sbtoken=2e56e15bbccb5c6c240a51da0d725ff2
+                  </a>
+                </div>
               </div>
 
-              <div className="article__block">
-                <h3 className="article__title article__title-sec">
-                  5 советов, которые помогут вам начать
-                  бизнес
-                </h3>
+              <div className="book__list-item">
+                <div className="book__title-mobile">
+                  <h4 className="book__title">Думай медленно, решай быстро</h4>
 
-                <p className="block__paragraph">
-                  Прежде чем мы начнем разбираться в подробностях и тонкостях создания бизнеса, откроем вам небольшой секрет: никто из тех, кто начинает свой бизнес впервые, не знает, что они делают.
-                </p>
+                  <span className="book__author">Дэниел Канеман</span>
+                </div>
 
-                <p className="block__paragraph">
-                  Шутки в сторону.
-                </p>
+                <img src={Book2Src} alt="" className="book__image" />
 
-                <p className="block__paragraph">
-                  Особенно на ранних этапах, речь идет не о том, что вы знаете, а об обучении на ошибках. Сосредоточьтесь на том, чего вы не знаете, а также на обучении и развитии. Это приводит нас к нашему первому совету:
-                </p>
+                <div className="book__text">
+                  <h4 className="book__title">Думай медленно, решай быстро</h4>
+
+                  <span className="book__author">Дэниел Канеман</span>
+
+                  <p className="book__description-wrap">
+                    <span className="book__description-about">О чём?</span>
+                    <p className="book__description">
+                      О том, что наши действия и поступки определены нашими
+                      мыслями. Но всегда ли мы контролируем наше мышление? В
+                      книге можно найти объяснение нашим нерациональные
+                      поступкам и тому как мы принимаем неверные решения, исходя
+                      из 2 систем мышления: медленной и быстрой.
+                    </p>
+                    <span className="book__description-about">
+                      О том как это работает, читайте в книге. Купить можно
+                      здесь:
+                    </span>
+                  </p>
+
+                  <a
+                    href="https://oz.by/books/more10342348.html?sbtoken=80711086aa66c7aaed79357773fb0fa3"
+                    className="book__link"
+                  >
+                    https://oz.by/books/more10342348.html?sbtoken=80711086aa66c7aaed79357773fb0fa3
+                  </a>
+                </div>
               </div>
 
-              <div className="article__block">
-                <h5 className="block__head">
-                  <span className="head__number">1</span>
-                  Знайте, что вы будете делать<br /> ошибки и учиться на них.
-                </h5>
+              <div className="book__list-item">
+                <div className="book__title-mobile">
+                  <h4 className="book__title">
+                    Безграничный разум. Учиться, учить и жить без ограничений
+                  </h4>
 
-                <p className="block__paragraph">
-                  Компании, которые в конечном итоге преуспевают, просто делают меньше ошибок. Вот почему открытие бизнеса в молодом возрасте может быть таким полезным. Прежде чем вы станете взрослым, вы узнаете обо всех небольших ошибках, которые вы совершили в первый раз, и избежите их на своих деловых предприятиях в будущем.
-                  <br />
-                  Чтобы максимально использовать это преимущество, вы должны активно выделять время, чтобы признать ошибки и позволить себе учиться на них. Воспринимайте свои ошибки не как негатив, а как возможность расти и развиваться.
-                </p>
+                  <span className="book__author">Джо Боулер</span>
+                </div>
+
+                <img src={Book3Src} alt="" className="book__image" />
+
+                <div className="book__text">
+                  <h4 className="book__title">
+                    Безграничный разум. Учиться, учить и жить без ограничений
+                  </h4>
+
+                  <span className="book__author">Джо Боулер</span>
+
+                  <p className="book__description-wrap">
+                    <span className="book__description-about">О чём?</span>
+
+                    <p className="book__description">
+                      О том, что настало время забыть все чему вас учили до
+                      этого. Автор говорит о том, что врожденной склонности к
+                      тому или иному предмету не существует. Это иллюзия. Ничто
+                      в этом мире не является залогом ваших выдающихся успехов,
+                      кроме ошибок. В книге вы узнаете, что ошибки это лучшее
+                      что может с вами произойти, и как сделать так чтобы они
+                      работали исключительно на вас.
+                    </p>
+
+                    <span className="book__description-about">
+                      Купить можно здесь:
+                    </span>
+                  </p>
+
+                  <a
+                    href="https://oz.by/books/more10913678.html?sbtoken=2fcf35f50fefd514ed9b933175646f5c"
+                    className="book__link"
+                  >
+                    https://oz.by/books/more10913678.html?sbtoken=2fcf35f50fefd514ed9b933175646f5c
+                  </a>
+                </div>
               </div>
-
-              <div className="article__block article__block-right">
-                <h5 className="block__head">
-                  <span className="head__number">2</span>
-                  Работайте над тем, чем <br /> вы увлечены
-                </h5>
-
-                <p className="block__paragraph">
-                  Компании, которые в конечном итоге преуспевают, просто делают меньше ошибок. Вот почему открытие бизнеса в молодом возрасте может быть таким полезным. Прежде чем вы станете взрослым, вы узнаете обо всех небольших ошибках, которые вы совершили в первый раз, и избежите их на своих деловых предприятиях в будущем.
-                  <br />
-                  Чтобы максимально использовать это преимущество, вы должны активно выделять время, чтобы признать ошибки и позволить себе учиться на них. Воспринимайте свои ошибки не как негатив, а как возможность расти и развиваться.
-                </p>
-              </div>
-
-              <div className="article__block">
-                <h5 className="block__head">
-                  <span className="head__number">3</span>
-                  Идея: стремиться решить <br /> проблему и исполнить желание
-                </h5>
-
-                <p className="block__paragraph">
-                  Придумывая идею для своего бизнеса, помните, что ваш продукт или услуга должны либо решить проблему, либо удовлетворить желание. Если возможно сделать и то, и другое, вы получили золото. Как автоматическое устройство для кормления собак из чистого золота ... ладно, может быть, это не очень хорошая идея, но это просто пример.
-                  <br />
-                  Возможно, лучшим примером будет продукт, который поможет вам вырастить сад в пригороде и будет способствовать устойчивости сообщества. Да, это лучше, но, к сожалению, это уже придумал 19-летний новозеландский гений, который сейчас учится в Университете Дьюка, который сделал свежие продукты в пригородных районах доступными и стильными. Проблема решена и желание выполнено. Проверьте и еще раз проверьте!
-                </p>
-
-                <p className="block__paragraph">
-                  Прежде чем вы остановитесь на идее, убедитесь, что вы сделали нужные исследования, чтобы лучше понять рынок, на который вы рассчитываете выйти. Ищите недостатки в других продуктах и услугах и попробуйте заполнить пробел.
-                  <br />
-                  Определите проблему и постарайтесь решить ее — просто, правда?
-                </p>
-              </div>
-
-              <div className="article__block article__block-right">
-                <h5 className="block__head">
-                  <span className="head__number">4</span>
-                  Найдите время, чтобы активно развивать свои предпринимательские навыки
-                </h5>
-
-                <p className="block__paragraph">
-                  Есть несколько способов превратиться из обычного ученика средней школы в предприимчивого бога!
-                </p>
-
-                <p className="block__paragraph">
-                  Вам стоит развить свои предпринимательские таланты. Вы можете сделать это, общаясь с единомышленниками на мероприятиях, встречах в сети, или увлекательных образовательных турах.
-                </p>
-
-                <p className="block__paragraph">
-                  Вы можете даже связаться с более опытным предпринимателем, который может стать вашим ментором. Кто-то у кого вы будете учиться, напитываться и спрашивать совета, когда это необходимо. Кто-то, кто станет вашим гуру развития бизнеса; йодой финансирования; и сенсеем стратегических решений.
-                </p>
-              </div>
-
-              <div className="article__block">
-                <h5 className="block__head">
-                  <span className="head__number">5</span>
-                  Работа, работа, работа,<br /> работа
-                </h5>
-
-                <p className="block__paragraph">
-                  Это само собой разумеется, но начать бизнес нелегко, особенно когда вы работаете с ограниченными ресурсами подростка. Это будет непросто. Работать придется в школе (тссс), после школы, до школы и даже по выходным! Вам придется пожертвовать временем, но поверьте, оно того стоит.
-                </p>
-
-                <p className="block__paragraph">
-                  Кроме того, если вы действительно увлечены своим делом, то никогда не будет казаться, что вы на самом деле делаете работу. Это будет больше похоже на то, что вы занимаетесь хобби. Наконец, постарайтесь всегда помнить о своей идее. Вы никогда не знаете, когда внезапно возникнет вспышка вдохновения.
-                </p>
-
-                <p className="block__paragraph">
-                  Ну, ребята, вот и все! Теперь вы достаточно подготовлены, чтобы начать пробовать создавать свой собственный бизнес. Да, это так просто. И так, чего же вы ждете? Начинайте изучать наш курс и... делать ошибки!
-                </p>
-              </div>
-
-              <div className="article__block article__block-quote">
-                <Quote className="quote-top" />
-
-                <h4 className="quote">
-                  Есть несколько способов превратиться <br />
-                  из обычного ученика средней школы <br />
-                  в предприимчивого бога!
-
-                  <span className="quote__author">Нил Блюменталь</span>
-                </h4>
-
-                <Quote className="quote-bottom" />
-              </div>
-
             </div>
           </div>
 
-          <NavArrows />
+          <div className="arrows__container">
+            <div className="button__wrap border-prev">
+              <button className="page__arrow page__arrow-prev">
 
-          <Callback />
+                <Arrow />
+              </button>
+            </div>
+            <div className="button__wrap border-next">
+              <button className="page__arrow page__arrow-next">
+
+                <Arrow />
+              </button>
+            </div>
+          </div>
+
+          <div className="callback__container">
+            <div className="button__wrap border-callback">
+              <button className="callback__button">
+
+                <span>Перейти к следующему модулю</span>
+              </button>
+            </div>
+
+            <div className="button__wrap border-callback">
+              <button className="callback__button">
+
+                <span>Вопрос эксперту </span>
+              </button>
+            </div>
+
+            <div className="button__wrap border-callback">
+              <a className="callback__button" href="localhost:3000">
+
+                <span>
+                  Поддержка <Telegram />
+                </span>
+              </a>
+            </div>
+          </div>
         </div>
       </main>
 

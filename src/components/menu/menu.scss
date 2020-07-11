@@ -36,19 +36,21 @@ input[type=checkbox] {
 .menu__checkbox:checked~.modules__menu {
   margin-left: 0;
   display: block;
-  transition: 0.2s ease all;
+  transition: 0.4s ease all;
 
   @include media((left: (desktop: 0, tablet: unset),
+      width: (desktop: 296px, laptop: 100%, tablet: 100vw),
       right: (tablet: 0)));
 }
 
 .modules__menu {
   background: #EDEAF5;
-  transition: 0.2s ease all;
+  transition: 0.4s ease all;
   overflow: hidden;
   box-sizing: border-box;
-  @include media((display: (desktop: none, tablet: block),
-      width: (desktop: 296px, laptop: 100%, tablet: 100vw),
+
+  @include media((display: (desktop: block, tablet: block),
+      width: (desktop: 0),
       height: (tablet: 100vh),
       padding: (desktop: 20px 8px 12px, tablet: 40px 8px 12px),
       margin: (desktop: 0 0 0 -100%, tablet: 0),

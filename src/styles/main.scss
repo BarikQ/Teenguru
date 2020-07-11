@@ -141,7 +141,7 @@ button:focus {
   letter-spacing: 0.035em;
   color: #492996;
   z-index: 10;
-  @include media((left: (desktop: -60px, tablet: -34px),
+  @include media((left: (desktop: -60px, tablet: -34px, mobile: 20px),
       top: (desktop: 30px, tablet: 18px),
       font-size: (desktop: 36px, tablet: 24px)));
 }
@@ -149,5 +149,6 @@ button:focus {
 .title__figure {
   width: 101px;
   z-index: 5;
-  @include media((width: (tablet: 60px)));
+  @include media((width: (tablet: 60px),
+      position: (mobile: absolute)));
 }
