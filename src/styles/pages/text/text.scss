@@ -241,10 +241,7 @@ input[type="checkbox"] {
   font-size: 16px;
   line-height: 26px;
   letter-spacing: 0.035em;
-
-  p {
-    margin: 10px 0;
-  }
+  margin-top: 10px;
 }
 
 .arrows__container {
@@ -279,4 +276,24 @@ input[type="checkbox"] {
       stroke: white !important;
     }
   }
+}
+
+.paragraph__wrap {
+  display: inline-block;
+  margin: 13px 0;
+}
+
+.paragraph__image {
+  width: 325px;
+  height: auto;
+}
+
+.paragraph__image-left {
+  float: left;
+  margin: 0 24px 1px 0;
+}
+
+.paragraph__image-right {
+  float: right;
+  margin: 0 0px 1px 24px;
 }
