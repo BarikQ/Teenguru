@@ -82,12 +82,12 @@ input[type=checkbox] {
   width: 20px;
   height: 20px;
   position: relative;
-  z-index: 90;
   cursor: pointer;
 
   @include media((position: (tablet: fixed),
       right: (tablet: 20px),
-      top: (tablet: 39px)));
+      top: (tablet: 39px),
+      z-index: (tablet: 90)));
 }
 
 .menu__button-open {

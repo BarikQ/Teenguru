@@ -3,19 +3,18 @@ import React from "react";
 import "./styles/main.scss";
 import "./styles/pages/task/task.scss";
 
-import { Header, Footer, Menu, ArticleList, Callback, NavArrows, RouteLine } from "./components";
+import { Header, Footer, Menu, ArticleList, Callback, NavArrows, RouteLine, Strengths, ModuleBox, Table } from "./components";
 
 import { ReactComponent as Lock } from "./assets/images/modules/dist/Lock.svg";
 import { ReactComponent as ArrowBlack } from "./assets/images/arrow_black.svg";
 import { ReactComponent as Arrow } from "./assets/images/arrow.svg";
-import { ReactComponent as Telegram } from "./assets/images/telegram.svg";
-import { ReactComponent as Star } from "./assets/images/star.svg";
 
 import Book1Src from "./assets/images/books/book_1.png";
 import Book2Src from "./assets/images/books/book_2.png";
 import Book3Src from "./assets/images/books/book_3.png";
 import TriangleSrc from "./assets/images/triangle.png";
 import CircleSrc from "./assets/images/circle.png";
+import BoxSrc from "./assets/images/box.png";
 import Text1Src from "./assets/images/text/img_1.png"
 import Text2Src from "./assets/images/text/img_2.png"
 
@@ -58,14 +57,11 @@ function App() {
                 </p>
               </div>
 
-              <div className="article__module">
-                <span className="module__number">Модуль 5.</span>
-                <h4 className="module__title">Финансы</h4>
+              <ModuleBox />
 
-                <p className="module__overview">
-                  Разница между группой и командой. Лидерство - что это? Лидерами рождаются или становятся? Собрать команду которая работает как единый механизм.
-                </p>
-              </div>
+              <Strengths />
+
+              <Table />
             </div>
           </div>
 
