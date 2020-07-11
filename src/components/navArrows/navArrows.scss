@@ -1,0 +1,29 @@
+@import "./../../styles/abstracts/mixin";
+
+.arrows__container {
+  display: flex;
+  margin-top: 8px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #E8EAEF;
+
+  .page__arrow {
+    width: 40px;
+    height: 40px;
+    border-radius: 41px;
+    position: relative;
+
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 48%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .border-next {
+    transform: rotate(180deg);
+    margin-left: 28px;
+  }
+
+  @include media((justify-content: (tablet: center)));
+}

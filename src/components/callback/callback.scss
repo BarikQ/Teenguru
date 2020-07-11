@@ -1,0 +1,46 @@
+@import "./../../styles/abstracts/mixin";
+
+.callback__button {
+  border-radius: 41px;
+  padding: 12px 18px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+      position: relative;
+      left: 10px;
+    }
+  }
+}
+
+.callback__container {
+  margin-top: 20px;
+  display: flex;
+  white-space: nowrap;
+  flex-wrap: wrap;
+
+  .button__wrap {
+    height: 41px;
+    @include media((margin: (tablet: 5px 0),
+        width: (mobile: 100%)));
+  }
+
+  .callback__button {
+    @include media((width: (mobile: 100%)));
+  }
+
+  .button__wrap:nth-child(1),
+  .button__wrap:nth-child(2) {
+    @include media((margin-right: (desktop: 10px, mobile: 0)));
+  }
+}

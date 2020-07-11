@@ -37,229 +37,6 @@ function App() {
       </nav>
 
       <main className="main">
-        {/* <div className="menu__column menu__column-left">
-          <input
-            className="menu__checkbox"
-            type="checkbox"
-            name="menuControl"
-            id="menuControl"
-          />
-          <label className="menu__open" htmlFor="menuControl">
-            <span className="menu__button-open"></span>
-          </label>
-
-          <div className="modules__menu">
-            <label className="menu__close" htmlFor="menuControl">
-              <span className="menu__button-close"></span>
-            </label>
-
-            <h3 className="menu__title">Hard Skills</h3>
-
-            <ul className="modules__list">
-              <li>
-                <div className="menu__module menu__module-open">
-                  <input
-                    className="module__contents-open"
-                    type="checkbox"
-                    name=""
-                    id="module-1"
-                  />
-                  <label className="module__label" htmlFor="module-1">
-                    <div className="label__text">
-                      <span className="module__number">Модуль 1.</span>
-
-                      <h4 className="module__title">Мышление</h4>
-                    </div>
-
-                    <Lock className="module__lock" />
-                    <ArrowBlack className="module__arrow" />
-                  </label>
-
-                  <div className="module__contents">
-                    <ul className="content__list">
-                      <li className="list__item">
-                        Притча про торговца обувью - показывает как влияет
-                        взгляд на ситуацию.
-                      </li>
-                      <li className="list__item list__item-active">
-                        Что влияет на мышление?
-                      </li>
-                      <li className="list__item">Мышление предпринимателя.</li>
-                      <li className="list__item">
-                        Способы развития разных типов мышления.
-                      </li>
-                      <li className="list__item">
-                        Задание: как из проблемы сделать задачу?
-                      </li>
-                      <li className="list__item list__item-test">ТЕСТ</li>
-                    </ul>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div className="menu__module menu__module-open">
-                  <input
-                    className="module__contents-open"
-                    type="checkbox"
-                    name=""
-                    id="module-2"
-                  />
-
-                  <label className="module__label" htmlFor="module-2">
-                    <div className="label__text">
-                      <span className="module__number">Модуль 2.</span>
-
-                      <h4 className="module__title">Поиск идеи</h4>
-                    </div>
-
-                    <Lock className="module__lock" />
-                    <ArrowBlack className="module__arrow" />
-                  </label>
-
-                  <div className="module__contents">
-                    <ul className="content__list">
-                      <li className="list__item">
-                        Притча про торговца обувью - показывает как влияет
-                        взгляд на ситуацию.
-                      </li>
-                      <li className="list__item">Что влияет на мышление?</li>
-                      <li className="list__item">Мышление предпринимателя.</li>
-                      <li className="list__item">
-                        Способы развития разных типов мышления.
-                      </li>
-                      <li className="list__item">
-                        Задание: как из проблемы сделать задачу?
-                      </li>
-                      <li className="list__item list__item-test">ТЕСТ</li>
-                    </ul>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div className="menu__module menu__module-close">
-                  <input
-                    className="module__contents-open"
-                    type="checkbox"
-                    name=""
-                    id="module-3"
-                  />
-
-                  <label className="module__label" htmlFor="module-3">
-                    <div className="label__text">
-                      <span className="module__number">Модуль 3.</span>
-
-                      <h4 className="module__title">Маркетинг</h4>
-                    </div>
-
-                    <Lock className="module__lock" />
-                    <ArrowBlack className="module__arrow" />
-                  </label>
-
-                  <div className="module__contents">
-                    <ul className="content__list">
-                      <li className="list__item">
-                        Притча про торговца обувью - показывает как влияет
-                        взгляд на ситуацию.
-                      </li>
-                      <li className="list__item">Что влияет на мышление?</li>
-                      <li className="list__item">Мышление предпринимателя.</li>
-                      <li className="list__item">
-                        Способы развития разных типов мышления.
-                      </li>
-                      <li className="list__item">
-                        Задание: как из проблемы сделать задачу?
-                      </li>
-                      <li className="list__item list__item-test">ТЕСТ</li>
-                    </ul>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div className="menu__module menu__module-close">
-                  <input
-                    className="module__contents-open"
-                    type="checkbox"
-                    name=""
-                    id="module-4"
-                  />
-
-                  <label className="module__label" htmlFor="module-4">
-                    <div className="label__text">
-                      <span className="module__number">Модуль 4.</span>
-
-                      <h4 className="module__title">Коммуникация</h4>
-                    </div>
-
-                    <Lock className="module__lock" />
-                    <ArrowBlack className="module__arrow" />
-                  </label>
-
-                  <div className="module__contents">
-                    <ul className="content__list">
-                      <li className="list__item">
-                        Притча про торговца обувью - показывает как влияет
-                        взгляд на ситуацию.
-                      </li>
-                      <li className="list__item">Что влияет на мышление?</li>
-                      <li className="list__item">Мышление предпринимателя.</li>
-                      <li className="list__item">
-                        Способы развития разных типов мышления.
-                      </li>
-                      <li className="list__item">
-                        Задание: как из проблемы сделать задачу?
-                      </li>
-                      <li className="list__item list__item-test">ТЕСТ</li>
-                    </ul>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div className="menu__module menu__module-close">
-                  <input
-                    className="module__contents-open"
-                    type="checkbox"
-                    name=""
-                    id="module-5"
-                  />
-
-                  <label className="module__label" htmlFor="module-5">
-                    <div className="label__text">
-                      <span className="module__number">Модуль 5.</span>
-
-                      <h4 className="module__title">Финансы</h4>
-                    </div>
-
-                    <Lock className="module__lock" />
-                    <ArrowBlack className="module__arrow" />
-                  </label>
-
-                  <div className="module__contents">
-                    <ul className="content__list">
-                      <li className="list__item">
-                        Притча про торговца обувью - показывает как влияет
-                        взгляд на ситуацию.
-                      </li>
-                      <li className="list__item">Что влияет на мышление?</li>
-                      <li className="list__item">Мышление предпринимателя.</li>
-                      <li className="list__item">
-                        Способы развития разных типов мышления.
-                      </li>
-                      <li className="list__item">
-                        Задание: как из проблемы сделать задачу?
-                      </li>
-                      <li className="list__item list__item-test">ТЕСТ</li>
-                    </ul>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div> */}
-
         <Menu />
 
         <div className="menu__column menu__column-right">
@@ -397,24 +174,24 @@ function App() {
           <div className="callback__container">
             <div className="button__wrap border-callback">
               <button className="callback__button">
-                {" "}
-                <span>Перейти к следующему модулю</span>{" "}
+
+                <span>Перейти к следующему модулю</span>
               </button>
             </div>
 
             <div className="button__wrap border-callback">
               <button className="callback__button">
-                {" "}
-                <span>Вопрос эксперту </span>{" "}
+
+                <span>Вопрос эксперту </span>
               </button>
             </div>
 
             <div className="button__wrap border-callback">
               <a className="callback__button" href="localhost:3000">
-                {" "}
+
                 <span>
                   Поддержка <Telegram />
-                </span>{" "}
+                </span>
               </a>
             </div>
           </div>

@@ -6,13 +6,14 @@
 }
 
 .footer__container {
-  padding: 20px 0;
   margin: 0 auto;
   max-width: 1240px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @include media((flex-direction: (tablet: column), text-align: (tablet: center)));
+  @include media((flex-direction: (tablet: column),
+      text-align: (tablet: center),
+      padding: (desktop: 20px 0, tablet: 32px 0)));
 }
 
 .social__list {
@@ -21,11 +22,13 @@
 }
 
 .footer__brand {
+  color: white;
+
   a {
     color: white;
   }
 
-  color: white;
+  @include media((display: (tablet: none)));
 }
 
 .footer__links {
@@ -36,7 +39,7 @@
     line-height: 17px;
   }
 
-  @include media((margin: (tablet: 20px)));
+  @include media((margin: (tablet: 0 0 40px)));
 }
 
 .social__item {

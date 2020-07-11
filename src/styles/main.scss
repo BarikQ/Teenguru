@@ -39,35 +39,6 @@ h1 {
   color: #F2386E;
 }
 
-.routes {
-  background: #EDEAF5;
-  font-weight: 500;
-  font-size: 12px;
-  @include media((padding: (laptop: 0 40px, tablet: 0 20px)));
-
-  ul {
-    max-width: 1240px;
-    margin: 0 auto;
-    padding: 14px 0;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-  }
-
-  a {
-    color: #292929;
-  }
-
-  .route-current {
-    color: #492996;
-  }
-
-  .route:not(:last-child)::after {
-    content: "/";
-    margin: 0 5px;
-  }
-}
-
 .button-def {
   font-size: 14px;
   font-weight: 600;
@@ -90,7 +61,7 @@ h1 {
   button,
   a {
     border: none;
-    background: white;
+    background: #F5F3FA;
     transition: 0.2s ease all;
 
     span {
@@ -103,31 +74,7 @@ h1 {
 
   a {
     display: block;
-    color: white;
-  }
-}
-
-.callback__button {
-  border-radius: 41px;
-  padding: 12px 18px;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
-}
-
-.callback__container {
-  margin-top: 20px;
-  display: flex;
-  white-space: nowrap;
-  flex-wrap: wrap;
-
-  .button__wrap {
-    @include media((margin: (tablet: 5px 0)));
-  }
-
-  .button__wrap:nth-child(1),
-  .button__wrap:nth-child(2) {
-    margin-right: 10px;
+    color: #F5F3FA;
   }
 }
 
@@ -169,34 +116,6 @@ button:focus {
   @include media((padding: (laptop: 0 40px)));
 }
 
-
-
-.arrows__container {
-  display: flex;
-  margin-top: 8px;
-  padding-bottom: 30px;
-  border-bottom: 2px solid #E8EAEF;
-
-  .page__arrow {
-    width: 40px;
-    height: 40px;
-    border-radius: 41px;
-    position: relative;
-
-    svg {
-      position: absolute;
-      top: 50%;
-      left: 48%;
-      transform: translate(-50%, -50%);
-    }
-  }
-
-  .border-next {
-    transform: rotate(180deg);
-    margin-left: 28px;
-  }
-}
-
 .button__wrap:hover {
   svg {
     path {
@@ -210,22 +129,23 @@ button:focus {
 }
 
 .article__title-wrap {
-  @include media((padding: (desktop: 40px 0 60px, tablet: 40px 0 20px)));
+  display: flex;
+  align-items: flex-start;
 }
 
 .article__title {
   position: relative;
   font-weight: bold;
-  font-size: 36px;
   line-height: 110.19%;
   letter-spacing: 0.035em;
   color: #492996;
   z-index: 10;
-  @include media((left: (desktop: 26px, tablet: 0)));
+  @include media((left: (desktop: -60px, tablet: -34px),
+      top: (desktop: 30px, tablet: 18px),
+      font-size: (desktop: 36px, tablet: 24px)));
 }
 
 .title__figure {
-  position: absolute;
   z-index: 5;
-  @include media((top: (desktop: 0, tablet: 10px), left: (tablet: -40px)));
+  @include media((width: (tablet: 60px)));
 }

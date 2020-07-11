@@ -237,7 +237,7 @@ input[type="checkbox"] {
   @include media((padding: (desktop: 0, laptop: 25px 0 0)))
 }
 
-.article__text {
+.article__content {
   font-size: 16px;
   line-height: 26px;
   letter-spacing: 0.035em;

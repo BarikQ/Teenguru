@@ -13,6 +13,10 @@
     ));
 }
 
+.menu__column-right {
+  @include media((margin-top: (laptop: 20px)));
+}
+
 .book__list-item {
   display: flex;
 }

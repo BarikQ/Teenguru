@@ -1,0 +1,17 @@
+.article__list {
+  margin: 16px 0 0;
+}
+
+.article__list-item {
+  display: flex;
+  align-items: center;
+}
+
+.item__marker {
+  flex: 0 0 auto;
+}
+
+.item__text {
+  display: inline-block;
+  margin: 10px 0px 10px 20px;
+}

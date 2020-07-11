@@ -9,7 +9,13 @@ input[type=checkbox] {
 }
 
 .menu__column-left {
-  @include media((width: (dekstop: fit-content, laptop: 100%), align-self: (laptop: center), margin-right: (desktop: 10px, laptop: 0)));
+  top: 0;
+  right: 0;
+  @include media((width: (dekstop: fit-content, laptop: 100%, tablet: unset),
+      align-self: (laptop: center),
+      margin-right: (desktop: 10px, laptop: 0),
+      position: (tablet: absolute),
+    ));
 }
 
 .menu__column-right {
@@ -29,24 +35,30 @@ input[type=checkbox] {
 
 .menu__checkbox:checked~.modules__menu {
   margin-left: 0;
-  left: 0;
   display: block;
   transition: 0.2s ease all;
+
+  @include media((left: (desktop: 0, tablet: unset),
+      right: (tablet: 0)));
 }
 
 .modules__menu {
-  margin-left: -100%;
-  left: -100%;
-  padding: 20px 8px 12px;
-  position: relative;
-  top: -20px;
   background: #EDEAF5;
-  border-radius: 0px 10px 10px 0px;
   transition: 0.2s ease all;
   overflow: hidden;
-  display: none;
   box-sizing: border-box;
-  @include media((width: (desktop: 296px, laptop: 100%)));
+  @include media((display: (desktop: none, tablet: block),
+      width: (desktop: 296px, laptop: 100%, tablet: 100vw),
+      height: (tablet: 100vh),
+      padding: (desktop: 20px 8px 12px, tablet: 40px 8px 12px),
+      margin: (desktop: 0 0 0 -100%, tablet: 0),
+      position: (desktop: relative, tablet: fixed),
+      top: (desktop: -20px, tablet: 0),
+      left: (desktop: -100%, tablet: unset),
+      right: (tablet: -100%),
+      z-index: (tablet: 100),
+      border-radius: (desktop: 0 10px 10px 0, tablet: 0),
+      overflow: (tablet: scroll)));
 }
 
 .menu__module-open {
@@ -70,7 +82,12 @@ input[type=checkbox] {
   width: 20px;
   height: 20px;
   position: relative;
+  z-index: 90;
   cursor: pointer;
+
+  @include media((position: (tablet: fixed),
+      right: (tablet: 20px),
+      top: (tablet: 39px)));
 }
 
 .menu__button-open {
@@ -149,7 +166,7 @@ input[type=checkbox] {
 
 .menu__module {
   border-radius: 10px;
-  margin: 10px 0;
+  margin-top: 10px;
   padding: 12px 12px 20px;
 }
 

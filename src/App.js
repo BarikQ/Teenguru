@@ -1,14 +1,16 @@
 import React from "react";
 
 import "./styles/main.scss";
-import "./styles/pages/text/text.scss";
+import "./styles/pages/task/task.scss";
 
-import { Header, Footer, Menu } from "./components/index";
+import { Header, Footer, Menu, ArticleList, Callback, NavArrows, RouteLine } from "./components";
 
 import { ReactComponent as Lock } from "./assets/images/modules/dist/Lock.svg";
 import { ReactComponent as ArrowBlack } from "./assets/images/arrow_black.svg";
 import { ReactComponent as Arrow } from "./assets/images/arrow.svg";
 import { ReactComponent as Telegram } from "./assets/images/telegram.svg";
+import { ReactComponent as Star } from "./assets/images/star.svg";
+
 import Book1Src from "./assets/images/books/book_1.png";
 import Book2Src from "./assets/images/books/book_2.png";
 import Book3Src from "./assets/images/books/book_3.png";
@@ -22,21 +24,7 @@ function App() {
     <div className="App">
       <Header />
 
-      <nav className="routes">
-        <ul className="routes-list">
-          <li className="route">
-            <a href="localhost:3000">Главная</a>
-          </li>
-          <li className="route">
-            <a href="localhost:3000">Модули</a>
-          </li>
-          <li className="route">
-            <a href="localhost:3000" className="route-current">
-              Содержание
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <RouteLine />
 
       <main className="main">
         <Menu />
@@ -44,91 +32,46 @@ function App() {
         <div className="menu__column menu__column-right">
           <div className="column__article">
             <div className="article__title-wrap">
-              <h3 className="article__title-text">2. Что влияет на мышление?</h3>
+              <img className="title__figure" src={CircleSrc} alt="" />
+
+              <h3 className="article__title">
+                Как проходить модуль "Что такое стартап?"
+              </h3>
             </div>
 
-            <div className="article__text">
-              <p className="paragraph__wrap">
-                <img className="paragraph__image paragraph__image-left" src={Text1Src} vspace="24" hspace="10" alt="" />
+            <div className="article__content">
+              <h4 className="article__intro">Из этого модуля вы узнаете:</h4>
 
-                <p>
-                  Повседневная практика показывает, что реализация намеченных
-                  плановых заданий позволяет выполнять важные задания по
-                  разработке модели развития. Не следует, однако забывать, что
-                  постоянное информационно-пропагандистское обеспечение нашей
-                  деятельности позволяет выполнять важные задания по разработке
-                  системы обучения кадров, соответствует насущным потребностям.
-                  Товарищи! постоянное информационно-пропагандистское обеспечение
-                  нашей деятельности требуют определения и уточнения систем
-                  массового участия. Повседневная практика показывает, что начало
-                  повседневной работы по формированию позиции требуют от нас
-                  анализа системы обучения кадров, соответствует насущным
-                  потребностям. Товарищи! постоянный количественный рост и сфера
-                  нашей активности обеспечивает широкому кругу (специалистов)
-                  участие в формировании систем массового участия.
+              <ArticleList />
+
+              <div className="article__text">
+                <p className="article__paragraph">
+                  Первый модуль состоит из видео, презентаций, статей и рекомендуемой литературы, а также ссылок для самостоятельного изучения. Мы рекомендуем изучать материалы модуля в том порядке, в котором они представлены. В среднем вы можете тратить 15-20 минут своего времени в день на изучение этого модуля.
                 </p>
-              </p>
-
-              <p className="paragraph__wrap">
-                <p>
-                  Задача организации, в особенности же постоянное
-                  информационно-пропагандистское обеспечение нашей деятельности
-                  влечет за собой процесс внедрения и модернизации системы
-                  обучения кадров, соответствует насущным потребностям. Задача
-                  организации, в особенности же укрепление и развитие структуры
-                  позволяет оценить значение системы обучения кадров,
-                  соответствует насущным потребностям. Не следует, однако
-                  забывать, что постоянный количественный рост и сфера нашей
-                  активности влечет за собой процесс внедрения и модернизации форм
-                  развития. Повседневная практика показывает, что рамки и место
-                  обучения кадров позволяет оценить значение системы обучения
-                  кадров, соответствует насущным потребностям.
+                <br />
+                <p className="article__paragraph">
+                  В конце модуля вы пройдете тест и сможете выполнить задание и отправить нам свое решение, чтобы получить от нас комментарии.
                 </p>
-              </p>
-
-              <p className="paragraph__wrap">
-                <img className="paragraph__image paragraph__image-right" src={Text2Src} vspace="24" hspace="10" alt="" />
-
-                <p>
-                  С другой стороны постоянный количественный рост и сфера нашей
-                  активности позволяет выполнять важные задания по разработке
-                  системы обучения кадров, соответствует насущным потребностям.
-                  Таким образом укрепление и развитие структуры играет важную роль
-                  в формировании соответствующий условий активизации. Повседневная
-                  практика показывает, что постоянный количественный рост и сфера
-                  нашей активности представляет собой интересный эксперимент
-                  проверки соответствующий условий активизации. С другой стороны
-                  дальнейшее развитие различных форм деятельности позволяет
-                  выполнять важные задания по разработке модели развития.
+                <br />
+                <p className="article__paragraph">
+                  Мы всегда с вами на связи, и в любом момент вы можете задать нам свой вопрос в телеграм-чате.
                 </p>
-              </p>
+              </div>
 
+              <div className="article__module">
+                <span className="module__number">Модуль 5.</span>
+                <h4 className="module__title">Финансы</h4>
 
+                <p className="module__overview">
+                  Разница между группой и командой. Лидерство - что это? Лидерами рождаются или становятся? Собрать команду которая работает как единый механизм.
+                </p>
+              </div>
             </div>
           </div>
 
-          <div className="arrows__container">
-            <div className="button__wrap border-prev">
-              <button className="page__arrow page__arrow-prev"> <Arrow /> </button>
-            </div>
-            <div className="button__wrap border-next">
-              <button className="page__arrow page__arrow-next"> <Arrow /> </button>
-            </div>
-          </div>
+          <NavArrows />
 
-          <div className="callback__container">
-            <div className="button__wrap border-callback">
-              <button className="callback__button"> <span>Перейти к следующему модулю</span> </button>
-            </div>
-
-            <div className="button__wrap border-callback">
-              <button className="callback__button"> <span>Вопрос эксперту </span> </button>
-            </div>
-
-            <div className="button__wrap border-callback">
-              <a className="callback__button" href="localhost:3000"> <span>Поддержка <Telegram /></span> </a>
-            </div>
-          </div>
+          <Callback />
         </div>
       </main>
 
