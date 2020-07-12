@@ -1,31 +1,27 @@
+@import "./../../abstracts/mixin";
+
 * {
   margin: 0;
   padding: 0;
-}
-
-#root {
-  background: #F5F3FA;
 }
 
 ul {
   list-style-type: none;
 }
 
-h1 {
-  font-size: 20px;
-  line-height: 23px;
-  font-weight: unset;
-  font-family: "Roboto";
+.main {
+  @include media((padding: (desktop: 0 40px, tablet: 0)));
+}
 
-  .text-purple {
-    font-family: "Roboto";
-    font-weight: 700;
-  }
+.skill__title,
+.skill__description,
+.skill__all {
 
-  .text-pink {
-    font-family: "Roboto";
-    font-weight: bold;
-  }
+  @include media((padding: (tablet: 0 20px, mobile: 0 20px),
+      margin: (mobile: 0 auto),
+      text-align: (mobile: center),
+      display: (mobile: flex),
+      justify-content: (mobile: center)));
 }
 
 .text-purple {
@@ -34,34 +30,6 @@ h1 {
 
 .text-pink {
   color: #F2386E;
-}
-
-.routes {
-  background: #EDEAF5;
-  font-weight: 500;
-  font-size: 12px;
-
-  ul {
-    max-width: 1240px;
-    margin: 0 auto;
-    padding: 14px 0;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-  }
-
-  a {
-    color: #292929;
-  }
-
-  .route-current {
-    color: #492996;
-  }
-
-  .route:not(:last-child)::after {
-    content: "/";
-    margin: 0 5px;
-  }
 }
 
 .skill__title {
@@ -135,17 +103,17 @@ h1 {
   padding: 34px 0;
 }
 
-.skill__modules {
-  margin-top: 20px;
-  display: grid;
-  grid-template: 1fr / repeat(5, 1fr);
-  grid-gap: 30px;
+.button__wrap {
+  .skill__buy {
+    background: #F5F3FA;
+  }
 }
 
 .skill__all {
   display: flex;
   align-items: center;
-  margin-top: 40px;
+
+  @include media((margin-top: (desktop: 40px, tablet: 20px)));
 
   .button__wrap {
     margin-left: 12px;
@@ -164,7 +132,6 @@ h1 {
 
   button {
     border: none;
-    background: white;
 
     span {
       background: linear-gradient(45deg, rgba(243, 56, 110, 1) 11%, rgba(75, 41, 149, 1) 100%);
@@ -172,6 +139,40 @@ h1 {
       -webkit-background-clip: text;
     }
   }
+}
+
+.module__card {
+  padding: 15px 15px 20px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  display: grid !important;
+  grid-template: 50px auto auto / 1fr;
+  min-height: 355px;
+  max-width: 194px;
+  width: 194px;
+  flex: 0 0 auto;
+
+  @include media ((margin: (tablet: 0 15px)));
+
+  .button__wrap {
+    button {
+      background: white;
+    }
+  }
+
+  .button__wrap:hover {
+    button {
+      background: transparent;
+    }
+  }
+}
+
+.module__card:first-child {
+  @include media((margin-left: (tablet: 0)));
+}
+
+.module__card:last-child {
+  @include media((margin-right: (tablet: 0)));
 }
 
 .module__card-open {
@@ -270,6 +271,11 @@ h1 {
     background: #492996;
     color: white;
 
+    .module__number,
+    .module__title {
+      color: white;
+    }
+
     .module__button-start {
       border: 2px solid white;
       color: white;
@@ -295,36 +301,16 @@ h1 {
 
   .module__card-lock {
     background: #DFDBEA;
+
+    .module__number,
+    .module__title {
+      color: #292929;
+    }
   }
 }
 
-.module__card {
-  padding: 15px 15px 20px;
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.05);
-  border-radius: 10px;
-  display: grid !important;
-  grid-template: 50px auto auto / 1fr;
-  min-height: 355px;
-  max-width: 194px;
+.skill__container-soft {
+  .skill__modules:not(.skill__gallery) {
+    // display: none;
+  }
 }
-
-.slick-list {
-  margin: 0 -15px;
-}
-
-.slick-slide>div {
-  padding: 0 15px;
-}
-
-.slick-slider {
-  display: none;
-}
-
-// .slick-slide {
-//   .module__card {}
-// }
-
-// .slick-slide {
-//   padding: 0 15px;
-//   box-sizing: border-box;
-// }

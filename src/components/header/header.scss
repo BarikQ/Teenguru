@@ -10,11 +10,29 @@
   top: 0;
   left: 0;
   z-index: 80;
+
   @include media((padding: (laptop: 20px 40px, tablet: 15px 20px),
       position: (tablet: fixed),
       background-color: (tablet: #F5F3FA),
       width: (tablet: 100%),
       box-shadow: (tablet: 0px 0px 8px -5px)));
+}
+
+h1 {
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: unset;
+  font-family: "Roboto";
+
+  .text-purple {
+    font-family: "Roboto";
+    font-weight: bold;
+  }
+
+  .text-pink {
+    font-family: "Roboto";
+    font-weight: bold;
+  }
 }
 
 .header__brand {
@@ -24,7 +42,7 @@
   }
 
   @include media((margin: (tablet: 0 0 0),
-      font-size: (tablet: 17px),
+      font-size: (tablet: 21px, mobile: 17px),
       width: (tablet: 82px)));
 }
 

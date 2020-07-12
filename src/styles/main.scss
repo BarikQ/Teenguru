@@ -119,8 +119,8 @@ button:focus {
 .button__wrap:hover {
   svg {
     path {
-      stroke: #6C2C8D !important;
-      fill: white !important;
+      // fill: #6C2C8D !important;
+      stroke: white !important;
     }
   }
 }

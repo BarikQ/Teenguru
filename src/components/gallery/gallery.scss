@@ -1,1 +1,70 @@
-@import "react-alice-carousel/src/alice-carousel.scss";
+@import "./../../styles/abstracts/mixin";
+
+$d_flex: flex !important;
+
+.skill__gallery-unslick {
+  @include media((display: (desktop: none, tablet: $d_flex),
+      padding: (tablet: 20px 0)));
+}
+
+.skill__gallery {
+  margin-top: 20px;
+
+  @include media((display: (tablet: none),
+      overflow-x: (tablet: scroll),
+      margin: (desktop: 20px 0 0 0, tablet: 12px 20px 0)));
+
+  .gallery__arrow {
+    width: 40px;
+    height: 40px;
+    border-radius: 41px;
+    position: relative;
+    background: #F5F3FA;
+
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 48%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.gallery__nav-next {
+  transform: rotate(180deg);
+  margin-left: 28px;
+}
+
+.gallery__nav {
+  position: absolute;
+  bottom: -84px;
+
+  @include media((right: (desktop: 0, tablet: 40px)));
+}
+
+.gallery__nav-prev {
+  @include media((right: (desktop: 64px, tablet: 104px)));
+}
+
+.slick-list {
+  margin: 0 -15px;
+}
+
+.slick-slide>div {
+  padding: 0 15px;
+  display: flex;
+  justify-content: center;
+}
+
+// .slick-slider {
+//   display: none;
+// }
+
+// .slick-slide {
+//   .module__card {}
+// }
+
+// .slick-slide {
+//   padding: 0 15px;
+//   box-sizing: border-box;
+// }

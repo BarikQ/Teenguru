@@ -44,4 +44,18 @@
 
 .social__item {
   margin: 0 15px;
+
+  a:hover {
+    svg {
+
+      path,
+      rect {
+        fill: url(#paint0_linear) !important;
+      }
+
+      circle {
+        fill: #00092B !important;
+      }
+    }
+  }
 }

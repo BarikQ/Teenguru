@@ -3,38 +3,24 @@ import React from "react";
 import "./styles/main.scss";
 import "./styles/pages/books/books.scss";
 
-import { Header, Footer, Menu } from "./components/index";
+import { Header, Footer, Menu, ArticleList, Callback, NavArrows, RouteLine, Strengths, ModuleBox, Table } from "./components";
 
-import { ReactComponent as Lock } from "./assets/images/modules/dist/Lock.svg";
-import { ReactComponent as ArrowBlack } from "./assets/images/arrow_black.svg";
 import { ReactComponent as Arrow } from "./assets/images/arrow.svg";
 import { ReactComponent as Telegram } from "./assets/images/telegram.svg";
+
 import Book1Src from "./assets/images/books/book_1.png";
 import Book2Src from "./assets/images/books/book_2.png";
 import Book3Src from "./assets/images/books/book_3.png";
 import TriangleSrc from "./assets/images/triangle.png";
 import CircleSrc from "./assets/images/circle.png";
+import BoxSrc from "./assets/images/box.png";
 
 function App() {
   return (
     <div className="App">
       <Header />
 
-      <nav className="routes">
-        <ul className="routes-list">
-          <li className="route">
-            <a href="localhost:3000">Главная</a>
-          </li>
-          <li className="route">
-            <a href="localhost:3000">Модули</a>
-          </li>
-          <li className="route">
-            <a href="localhost:3000" className="route-current">
-              Содержание
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <RouteLine />
 
       <main className="main">
         <Menu />
@@ -51,6 +37,12 @@ function App() {
 
             <div className="article__books">
               <div className="book__list-item">
+                <div className="book__title-mobile">
+                  <h4 className="book__title">Гибкое сознание</h4>
+
+                  <span className="book__author">Кэрол Дуэк</span>
+                </div>
+
                 <img src={Book1Src} alt="" className="book__image" />
 
                 <div className="book__text">
@@ -86,6 +78,12 @@ function App() {
               </div>
 
               <div className="book__list-item">
+                <div className="book__title-mobile">
+                  <h4 className="book__title">Думай медленно, решай быстро</h4>
+
+                  <span className="book__author">Дэниел Канеман</span>
+                </div>
+
                 <img src={Book2Src} alt="" className="book__image" />
 
                 <div className="book__text">
@@ -118,6 +116,14 @@ function App() {
               </div>
 
               <div className="book__list-item">
+                <div className="book__title-mobile">
+                  <h4 className="book__title">
+                    Безграничный разум. Учиться, учить и жить без ограничений
+                  </h4>
+
+                  <span className="book__author">Джо Боулер</span>
+                </div>
+
                 <img src={Book3Src} alt="" className="book__image" />
 
                 <div className="book__text">
