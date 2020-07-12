@@ -1,14 +1,17 @@
 import React from "react";
-import AliceCarousel from 'react-alice-carousel'
 import Gallery from "./components/gallery/gallery"
-
 
 import "./styles/main.scss";
 import "./styles/pages/modules/modules.scss";
-import 'react-alice-carousel/lib/alice-carousel.css'
 
-import { Header, Footer } from "./components/index";
+import { Header, Footer, Menu, ArticleList, Callback, NavArrows, RouteLine, Strengths, ModuleBox, Table } from "./components";
 
+import { ReactComponent as Lock } from "./assets/images/modules/dist/Lock.svg";
+import { ReactComponent as ArrowBlack } from "./assets/images/arrow_black.svg";
+import { ReactComponent as Arrow } from "./assets/images/arrow.svg";
+import { ReactComponent as Clock } from "./assets/images/clock.svg";
+import { ReactComponent as Quote } from "./assets/images/quote.svg";
+import { ReactComponent as Telegram } from "./assets/images/telegram.svg";
 import { ReactComponent as Thinking } from "./assets/images/modules/dist/thinking.svg";
 import { ReactComponent as Idea } from "./assets/images/modules/dist/idea.svg";
 import { ReactComponent as Metrics } from "./assets/images/modules/dist/metrics.svg";
@@ -17,26 +20,13 @@ import { ReactComponent as Finances } from "./assets/images/modules/dist/finance
 import { ReactComponent as Product } from "./assets/images/modules/dist/product.svg";
 import { ReactComponent as Auction } from "./assets/images/modules/dist/auction.svg";
 import { ReactComponent as Control } from "./assets/images/modules/dist/control.svg";
-import { ReactComponent as Lock } from "./assets/images/modules/dist/Lock.svg";
-import { ReactComponent as Arrow } from "./assets/images/arrow.svg";
 
 function App() {
   return (
     <div className="App">
       <Header />
 
-      <nav className="routes">
-        <ul className="routes-list">
-          <li className="route">
-            <a href="localhost:3000">Главная</a>
-          </li>
-          <li className="route">
-            <a href="localhost:3000" className="route-current">
-              Модули
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <RouteLine />
 
       <main className="main">
         <div className="skill__container skill__container-hard">
@@ -47,7 +37,7 @@ function App() {
             количественно и которые можно наглядно продемонстрировать.
           </p>
 
-          <div className="skill__modules">
+          <div className="skill__gallery skill__gallery-unslick">
             <div className="module__card module__card-open">
               <Thinking className="module__icon" />
 
@@ -218,6 +208,8 @@ function App() {
             </div>
           </div>
 
+          <Gallery className={"skill__gallery"} />
+
           <div className="skill__all">
             <span className="module__price text-price">
               <span>12 990</span> р.
@@ -237,7 +229,7 @@ function App() {
             направления, в котором работает человек.
           </p>
 
-          <div className="skill__modules">
+          <div className="skill__gallery skill__gallery-unslick">
             <div className="module__card module__card-buy">
               <Product className="module__icon" />
 
@@ -408,7 +400,7 @@ function App() {
             </div>
           </div>
 
-          <Gallery className="skill__gallery" />
+          <Gallery className={"skill__gallery"} />
 
           <div className="skill__all">
             <span className="module__price text-price">

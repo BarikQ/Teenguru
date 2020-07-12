@@ -1,5 +1,5 @@
 import React from "react";
-import Gallery from "./components/gallery/gallery"
+import Gallery from "./components/gallery/gallery";
 
 import "./styles/main.scss";
 import "./styles/pages/modules/modules.scss";
@@ -20,15 +20,6 @@ import { ReactComponent as Finances } from "./assets/images/modules/dist/finance
 import { ReactComponent as Product } from "./assets/images/modules/dist/product.svg";
 import { ReactComponent as Auction } from "./assets/images/modules/dist/auction.svg";
 import { ReactComponent as Control } from "./assets/images/modules/dist/control.svg";
-
-import Book1Src from "./assets/images/books/book_1.png";
-import Book2Src from "./assets/images/books/book_2.png";
-import Book3Src from "./assets/images/books/book_3.png";
-import TriangleSrc from "./assets/images/triangle.png";
-import CircleSrc from "./assets/images/circle.png";
-import BoxSrc from "./assets/images/box.png";
-import Text1Src from "./assets/images/text/img_1.png"
-import Text2Src from "./assets/images/text/img_2.png"
 
 function App() {
   return (

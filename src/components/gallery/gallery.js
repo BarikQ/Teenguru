@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 
 import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import "./gallery.scss";
 
 import { ReactComponent as Thinking } from "./../../assets/images/modules/dist/thinking.svg";
@@ -78,15 +77,6 @@ export default class SimpleSlider extends Component {
         {
           breakpoint: 768,
           settings: "unslick"
-          // slidesToShow: 2,
-          // slidesToScroll: 1
-        },
-        {
-          breakpoint: 576,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
         }
       ]
     };
