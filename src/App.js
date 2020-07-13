@@ -1,22 +1,25 @@
 import React from "react";
+import Gallery from "./components/gallery/gallery";
 
 import "./styles/main.scss";
-import "./styles/pages/task/task.scss";
+import "./styles/pages/modules/modules.scss";
 
 import { Header, Footer, Menu, ArticleList, Callback, NavArrows, RouteLine, Strengths, ModuleBox, Table } from "./components";
 
 import { ReactComponent as Lock } from "./assets/images/modules/dist/Lock.svg";
 import { ReactComponent as ArrowBlack } from "./assets/images/arrow_black.svg";
 import { ReactComponent as Arrow } from "./assets/images/arrow.svg";
-
-import Book1Src from "./assets/images/books/book_1.png";
-import Book2Src from "./assets/images/books/book_2.png";
-import Book3Src from "./assets/images/books/book_3.png";
-import TriangleSrc from "./assets/images/triangle.png";
-import CircleSrc from "./assets/images/circle.png";
-import BoxSrc from "./assets/images/box.png";
-import Text1Src from "./assets/images/text/img_1.png"
-import Text2Src from "./assets/images/text/img_2.png"
+import { ReactComponent as Clock } from "./assets/images/clock.svg";
+import { ReactComponent as Quote } from "./assets/images/quote.svg";
+import { ReactComponent as Telegram } from "./assets/images/telegram.svg";
+import { ReactComponent as Thinking } from "./assets/images/modules/dist/thinking.svg";
+import { ReactComponent as Idea } from "./assets/images/modules/dist/idea.svg";
+import { ReactComponent as Metrics } from "./assets/images/modules/dist/metrics.svg";
+import { ReactComponent as Communication } from "./assets/images/modules/dist/communication.svg";
+import { ReactComponent as Finances } from "./assets/images/modules/dist/finances.svg";
+import { ReactComponent as Product } from "./assets/images/modules/dist/product.svg";
+import { ReactComponent as Auction } from "./assets/images/modules/dist/auction.svg";
+import { ReactComponent as Control } from "./assets/images/modules/dist/control.svg";
 
 function App() {
   return (
@@ -28,46 +31,388 @@ function App() {
       <main className="main">
         <Menu />
 
-        <div className="menu__column menu__column-right">
-          <div className="column__article">
-            <div className="article__title-wrap">
-              <img className="title__figure" src={CircleSrc} alt="" />
+        <div className="skill__container skill__container-hard">
+          <h2 className="skill__title">Hard Skills</h2>
 
-              <h3 className="article__title">
-                Как проходить модуль "Что такое стартап?"
-              </h3>
-            </div>
+          <p className="skill__description">
+            Технические способности или наборы навыков, которые легко определить
+            количественно и которые можно наглядно продемонстрировать.
+          </p>
 
-            <div className="article__content">
-              <h4 className="article__intro">Из этого модуля вы узнаете:</h4>
+          <div className="skill__gallery skill__gallery-unslick">
+            <div className="module__card module__card-open">
+              <Thinking className="module__icon" />
 
-              <ArticleList />
+              <div className="module__description">
+                <span className="module__number">Модуль 1.</span>
 
-              <div className="article__text">
-                <p className="article__paragraph">
-                  Первый модуль состоит из видео, презентаций, статей и рекомендуемой литературы, а также ссылок для самостоятельного изучения. Мы рекомендуем изучать материалы модуля в том порядке, в котором они представлены. В среднем вы можете тратить 15-20 минут своего времени в день на изучение этого модуля.
-                </p>
-                <br />
-                <p className="article__paragraph">
-                  В конце модуля вы пройдете тест и сможете выполнить задание и отправить нам свое решение, чтобы получить от нас комментарии.
-                </p>
-                <br />
-                <p className="article__paragraph">
-                  Мы всегда с вами на связи, и в любом момент вы можете задать нам свой вопрос в телеграм-чате.
+                <h4 className="module__title">Мышление</h4>
+
+                <p className="module__description">
+                  Роль мышление в бизнесе, особенности и нюансы
+                  предпринимательского мышления в сравнении с обычным. Как
+                  сделать мышление более эффективным для бизнеса.
                 </p>
               </div>
 
-              <ModuleBox />
+              <div className="module__buttons">
+                <button className="module__button module__button-start">
+                  <span className="button__text">Начать</span>
+                </button>
 
-              <Strengths />
+                <span className="module__price text-price">
+                  <span>2 574</span> р.
+                </span>
 
-              <Table />
+                <div className="button__wrap">
+                  <button className="module__button module__button-buy">
+                    <span className="button__text">Купить</span>
+                  </button>
+                </div>
+
+                <Lock className="module__lock" />
+              </div>
+            </div>
+
+            <div className="module__card module__card-buy">
+              <Idea className="module__icon" />
+
+              <div className="module__description">
+                <span className="module__number">Модуль 2.</span>
+
+                <h4 className="module__title">Поиск идеи</h4>
+
+                <p className="module__description">
+                  Где брать идеи, должна ли быть идея креативной? Как развивать
+                  креативность для бизнеса? Как понять что идея “выстрелит”?
+                </p>
+              </div>
+
+              <div className="module__buttons">
+                <button className="module__button module__button-start">
+                  <span className="button__text">Начать</span>
+                </button>
+
+                <span className="module__price text-price">
+                  <span>2 574</span> р.
+                </span>
+
+                <div className="button__wrap">
+                  <button className="module__button module__button-buy">
+                    <span className="button__text">Купить</span>
+                  </button>
+                </div>
+
+                <Lock className="module__lock" />
+              </div>
+            </div>
+
+            <div className="module__card module__card-lock">
+              <Metrics className="module__icon" />
+
+              <div className="module__description">
+                <span className="module__number">Модуль 3.</span>
+
+                <h4 className="module__title">Маркетинг</h4>
+
+                <p className="module__description">
+                  Инвестирование в стартапы на разных его стадиях и работа
+                  синдикатов. Доступ к документам для оценки стартапов и
+                  структурирования инвестиций.
+                </p>
+              </div>
+
+              <div className="module__buttons">
+                <button className="module__button module__button-start">
+                  <span className="button__text">Начать</span>
+                </button>
+
+                <span className="module__price text-price">
+                  <span>2 574</span> р.
+                </span>
+
+                <div className="button__wrap">
+                  <button className="module__button module__button-buy">
+                    <span className="button__text">Купить</span>
+                  </button>
+                </div>
+
+                <Lock className="module__lock" />
+              </div>
+            </div>
+
+            <div className="module__card module__card-lock">
+              <Communication className="module__icon" />
+
+              <div className="module__description">
+                <span className="module__number">Модуль 4.</span>
+
+                <h4 className="module__title">Коммуникация</h4>
+
+                <p className="module__description">
+                  Отправить письмо партнеру, презентовать проект инвестору - это
+                  все коммуникация. Основные правила для конструктивного
+                  общения.
+                </p>
+              </div>
+
+              <div className="module__buttons">
+                <button className="module__button module__button-start">
+                  <span className="button__text">Начать</span>
+                </button>
+
+                <span className="module__price text-price">
+                  <span>2 574</span> р.
+                </span>
+
+                <div className="button__wrap">
+                  <button className="module__button module__button-buy">
+                    <span className="button__text">Купить</span>
+                  </button>
+                </div>
+
+                <Lock className="module__lock" />
+              </div>
+            </div>
+
+            <div className="module__card module__card-lock">
+              <Finances className="module__icon" />
+
+              <div className="module__description">
+                <span className="module__number">Модуль 5.</span>
+
+                <h4 className="module__title">Финансы</h4>
+
+                <p className="module__description">
+                  Разница между группой и командой. Лидерство - что это?
+                  Лидерами рождаются или становятся? Собрать команду которая
+                  работает как единый механизм.
+                </p>
+              </div>
+
+              <div className="module__buttons">
+                <button className="module__button module__button-start">
+                  <span className="button__text">Начать</span>
+                </button>
+
+                <span className="module__price text-price">
+                  <span>2 574</span> р.
+                </span>
+
+                <div className="button__wrap">
+                  <button className="module__button module__button-buy">
+                    <span className="button__text">Купить</span>
+                  </button>
+                </div>
+
+                <Lock className="module__lock" />
+              </div>
             </div>
           </div>
 
-          <NavArrows />
+          <Gallery className={"skill__gallery"} />
 
-          <Callback />
+          <div className="skill__all">
+            <span className="module__price text-price">
+              <span>12 990</span> р.
+            </span>
+
+            <div className="button__wrap">
+              <button className="skill__buy button-def"><span>Купить весь курс</span></button>
+            </div>
+          </div>
+        </div>
+
+        <div className="skill__container skill__container-soft">
+          <h2 className="skill__title">Soft Skills</h2>
+
+          <p className="skill__description">
+            Позволяют быть успешным независимо от специфики деятельности и
+            направления, в котором работает человек.
+          </p>
+
+          <div className="skill__gallery skill__gallery-unslick">
+            <div className="module__card module__card-buy">
+              <Product className="module__icon" />
+
+              <div className="module__description">
+                <span className="module__number">Модуль 1.</span>
+
+                <h4 className="module__title">Формирование продукта</h4>
+
+                <p className="module__description">
+                  Разница между бизнесом и стартапом. Из каких компонентов
+                  состоит любой бизнес, а также без чего он не возможен. Что
+                  такое MVP. Как и для чего составлять бизнес модель.
+                </p>
+              </div>
+
+              <div className="module__buttons">
+                <button className="module__button module__button-start">
+                  <span className="button__text">Начать</span>
+                </button>
+
+                <span className="module__price text-price">
+                  <span>2 574</span> р.
+                </span>
+
+                <div className="button__wrap">
+                  <button className="module__button module__button-buy">
+                    <span className="button__text">Купить</span>
+                  </button>
+                </div>
+
+                <Lock className="module__lock" />
+              </div>
+            </div>
+
+            <div className="module__card module__card-buy">
+              <Metrics className="module__icon" />
+
+              <div className="module__description">
+                <span className="module__number">Модуль 1.</span>
+
+                <h4 className="module__title">Маркетинг</h4>
+
+                <p className="module__description">
+                  Понятие и портрет целевой аудитории. Выход продукта на
+                  рынок.Каналы продвижения. Смм, пиар.
+                </p>
+              </div>
+
+              <div className="module__buttons">
+                <button className="module__button module__button-start">
+                  <span className="button__text">Начать</span>
+                </button>
+
+                <span className="module__price text-price">
+                  <span>2 574</span> р.
+                </span>
+
+                <div className="button__wrap">
+                  <button className="module__button module__button-buy">
+                    <span className="button__text">Купить</span>
+                  </button>
+                </div>
+
+                <Lock className="module__lock" />
+              </div>
+            </div>
+
+            <div className="module__card module__card-buy">
+              <Auction className="module__icon" />
+
+              <div className="module__description">
+                <span className="module__number">Модуль 1.</span>
+
+                <h4 className="module__title">Юридические аспекты</h4>
+
+                <p className="module__description">
+                  Легальный бизнес в 16 - это миф? Что говорит закон про
+                  подростковый бизнес. Сколько нужно денег и куда идти чтобы
+                  легально стать бизнесменом.
+                </p>
+              </div>
+
+              <div className="module__buttons">
+                <button className="module__button module__button-start">
+                  <span className="button__text">Начать</span>
+                </button>
+
+                <span className="module__price text-price">
+                  <span>2 574</span> р.
+                </span>
+
+                <div className="button__wrap">
+                  <button className="module__button module__button-buy">
+                    <span className="button__text">Купить</span>
+                  </button>
+                </div>
+
+                <Lock className="module__lock" />
+              </div>
+            </div>
+
+            <div className="module__card module__card-buy">
+              <Finances className="module__icon" />
+
+              <div className="module__description">
+                <span className="module__number">Модуль 1.</span>
+
+                <h4 className="module__title">Финансы</h4>
+
+                <p className="module__description">
+                  Где брать деньги на развитие бизнеса? В каком финансовом
+                  состоянии бизнес на данный момент? Кто такие инвесторы и
+                  бизнес - ангелы. Какой инвестор нужен?
+                </p>
+              </div>
+
+              <div className="module__buttons">
+                <button className="module__button module__button-start">
+                  <span className="button__text">Начать</span>
+                </button>
+
+                <span className="module__price text-price">
+                  <span>2 574</span> р.
+                </span>
+
+                <div className="button__wrap">
+                  <button className="module__button module__button-buy">
+                    <span className="button__text">Купить</span>
+                  </button>
+                </div>
+
+                <Lock className="module__lock" />
+              </div>
+            </div>
+
+            <div className="module__card module__card-buy">
+              <Control className="module__icon" />
+
+              <div className="module__description">
+                <span className="module__number">Модуль 1.</span>
+
+                <h4 className="module__title">Управление проектом</h4>
+
+                <p className="module__description">
+                  Понять эффективность проекта. Планировать и организовывать
+                  работу с наибольшей эффективностью. Модель спиральной динамики
+                  развития проекта.
+                </p>
+              </div>
+
+              <div className="module__buttons">
+                <button className="module__button module__button-start">
+                  <span className="button__text">Начать</span>
+                </button>
+
+                <span className="module__price text-price">
+                  <span>2 574</span> р.
+                </span>
+
+                <div className="button__wrap">
+                  <button className="module__button module__button-buy">
+                    <span className="button__text">Купить</span>
+                  </button>
+                </div>
+
+                <Lock className="module__lock" />
+              </div>
+            </div>
+          </div>
+
+          <Gallery className={"skill__gallery"} />
+
+          <div className="skill__all">
+            <span className="module__price text-price">
+              <span>12 990</span> р.
+            </span>
+
+            <div className="button__wrap">
+              <button className="skill__buy button-def"><span>Купить весь курс</span></button>
+            </div>
+          </div>
         </div>
       </main>
 

@@ -1,7 +1,7 @@
 @import "./../../styles/abstracts/mixin";
 
 .main {
-  @include media((flex-direction: (laptop: column)));
+  @include media((flex-direction: (sm_laptop: column)));
 }
 
 input[type=checkbox] {
@@ -11,15 +11,15 @@ input[type=checkbox] {
 .menu__column-left {
   top: 0;
   right: 0;
-  @include media((width: (dekstop: fit-content, laptop: 100%, tablet: unset),
-      align-self: (laptop: center),
-      margin-right: (desktop: 10px, laptop: 0),
+  @include media((width: (dekstop: fit-content, sm_laptop: 100%, tablet: unset),
+      align-self: (sm_laptop: center),
+      margin-right: (desktop: 10px, sm_laptop: 0),
       position: (tablet: absolute),
     ));
 }
 
 .menu__column-right {
-  @include media((margin-left: (desktop: 10px, laptop: 0)));
+  @include media((margin-left: (desktop: 10px, sm_laptop: 0)));
 }
 
 .menu__title {
@@ -39,9 +39,9 @@ input[type=checkbox] {
   transition: 0.4s ease all;
 
   @include media((left: (desktop: 0, tablet: unset),
-      width: (desktop: 296px, laptop: 100%, tablet: 100vw),
+      width: (desktop: 296px, sm_laptop: 100%, tablet: 100vw),
       right: (tablet: 0),
-      display: (laptop: block)));
+      display: (sm_laptop: block)));
 }
 
 .modules__menu {
@@ -50,14 +50,14 @@ input[type=checkbox] {
   overflow: hidden;
   box-sizing: border-box;
 
-  @include media((display: (desktop: block, laptop: none, tablet: block),
+  @include media((display: (desktop: block, sm_laptop: none, tablet: block),
       width: (desktop: 0),
       height: (tablet: 100vh),
       padding: (desktop: 20px 8px 12px, tablet: 40px 8px 12px),
-      margin: (desktop: 0 0 0 -100%, tablet: 0),
+      margin: (desktop: 0 0 0 -200%, tablet: 0),
       position: (desktop: relative, tablet: fixed),
       top: (desktop: -20px, tablet: 0),
-      left: (desktop: -100%, tablet: unset),
+      left: (desktop: -200%, tablet: unset),
       right: (tablet: -100%),
       z-index: (tablet: 100),
       border-radius: (desktop: 0 10px 10px 0, tablet: 0),
