@@ -3,7 +3,7 @@ import React from "react";
 import "./styles/main.scss";
 import "./styles/pages/text/text.scss";
 
-import { Header, Footer, Menu } from "./components/index";
+import { Header, Footer, Menu, ArticleList, Callback, NavArrows, RouteLine, Strengths, ModuleBox, Table } from "./components";
 
 import { ReactComponent as Arrow } from "./assets/images/arrow.svg";
 import { ReactComponent as Telegram } from "./assets/images/telegram.svg";
@@ -15,21 +15,7 @@ function App() {
     <div className="App">
       <Header />
 
-      <nav className="routes">
-        <ul className="routes-list">
-          <li className="route">
-            <a href="localhost:3000">Главная</a>
-          </li>
-          <li className="route">
-            <a href="localhost:3000">Модули</a>
-          </li>
-          <li className="route">
-            <a href="localhost:3000" className="route-current">
-              Содержание
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <RouteLine />
 
       <main className="main">
         <Menu />
