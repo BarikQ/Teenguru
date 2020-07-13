@@ -13,6 +13,10 @@ ul {
   @include media((padding: (desktop: 0 40px, tablet: 0)));
 }
 
+.menu__column {
+  @include media((display: (desktop: none, tablet: inherit)));
+}
+
 .skill__title,
 .skill__description,
 .skill__all {

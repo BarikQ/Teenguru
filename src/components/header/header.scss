@@ -12,10 +12,11 @@
   z-index: 80;
 
   @include media((padding: (laptop: 20px 40px, tablet: 15px 20px),
-      position: (tablet: fixed),
+      position: (tablet: sticky),
       background-color: (tablet: #F5F3FA),
       width: (tablet: 100%),
-      box-shadow: (tablet: 0px 0px 8px -5px)));
+      box-shadow: (tablet: 0px 0px 8px -5px),
+      box-sizing: (tablet: border-box)));
 }
 
 h1 {

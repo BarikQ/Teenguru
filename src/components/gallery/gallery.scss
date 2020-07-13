@@ -7,6 +7,11 @@ $d_flex: flex !important;
       padding: (tablet: 20px 0)));
 }
 
+.skill__gallery::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
 .skill__gallery {
   margin-top: 20px;
 

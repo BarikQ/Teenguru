@@ -5,7 +5,7 @@
   font-weight: 500;
   font-size: 12px;
   @include media((padding: (laptop: 0 40px, tablet: 0 20px),
-      margin-top: (tablet: 100px)));
+      margin-top: (tablet: 0)));
 
   ul {
     max-width: 1240px;
