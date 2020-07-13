@@ -30,7 +30,7 @@
 
   .button__wrap {
     height: 41px;
-    @include media((margin: (tablet: 5px 0),
+    @include media((margin: (laptop: 5px 0, tablet: 5px 0),
         width: (mobile: 100%)));
   }
 

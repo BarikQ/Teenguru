@@ -40,7 +40,8 @@ input[type=checkbox] {
 
   @include media((left: (desktop: 0, tablet: unset),
       width: (desktop: 296px, laptop: 100%, tablet: 100vw),
-      right: (tablet: 0)));
+      right: (tablet: 0),
+      display: (laptop: block)));
 }
 
 .modules__menu {
@@ -49,7 +50,7 @@ input[type=checkbox] {
   overflow: hidden;
   box-sizing: border-box;
 
-  @include media((display: (desktop: block, tablet: block),
+  @include media((display: (desktop: block, laptop: none, tablet: block),
       width: (desktop: 0),
       height: (tablet: 100vh),
       padding: (desktop: 20px 8px 12px, tablet: 40px 8px 12px),
