@@ -10,11 +10,15 @@ ul {
 }
 
 .main {
-  @include media((padding: (desktop: 0 40px, tablet: 0)));
+  padding: 0 40px;
+
+  @include media((padding: (tablet: 0)));
 }
 
 .menu__column {
-  @include media((display: (desktop: none, tablet: inherit)));
+  display: none;
+
+  @include media((display: (tablet: inherit)));
 }
 
 .skill__title,
@@ -116,8 +120,9 @@ ul {
 .skill__all {
   display: flex;
   align-items: center;
+  margin-top: 40px;
 
-  @include media((margin-top: (desktop: 40px, tablet: 20px)));
+  @include media((margin-top: (tablet: 20px)));
 
   .button__wrap {
     margin-left: 12px;

@@ -4,6 +4,7 @@
   display: flex;
   padding-bottom: 30px;
   border-bottom: 2px solid #E8EAEF;
+  margin-top: 8px;
 
   .page__arrow {
     width: 40px;
@@ -22,8 +23,14 @@
   .border-next {
     transform: rotate(180deg);
     margin-left: 28px;
+
+    @include media((margin-left: (tablet: 0)));
+  }
+
+  .button__wrap {
+    @include media((margin: (tablet: 0 15px)));
   }
 
   @include media((justify-content: (tablet: center),
-      margin-top: (desktop: 8px, tablet: 40px)));
+      margin-top: (tablet: 40px)));
 }

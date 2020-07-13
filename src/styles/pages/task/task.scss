@@ -5,8 +5,9 @@
   margin: 0 auto;
   overflow: hidden;
   display: flex;
-  @include media((padding: (desktop: 40px 0,
-        laptop: 40px,
+  padding: 40px 0;
+
+  @include media((padding: (laptop: 40px,
         tablet: 20px,
       ),
       flex-direction: (tablet: column,

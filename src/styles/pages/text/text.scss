@@ -5,6 +5,8 @@
   margin: 0 auto;
   overflow: hidden;
   display: flex;
+  padding: 40px 0;
+
   @include media((padding: (desktop: 40px 0,
         laptop: 40px,
         tablet: 20px),
@@ -234,14 +236,17 @@ input[type="checkbox"] {
 }
 
 .article__title-wrap {
-  @include media((padding: (desktop: 0, laptop: 25px 0 0)))
+  padding: 0;
+  @include media((padding: (sm_laptop: 25px 0 0)))
 }
 
 .article__content {
   font-size: 16px;
   line-height: 26px;
   letter-spacing: 0.035em;
-  @include media((margin-top: (desktop: 20px, tablet: 20px)));
+  margin-top: 20px;
+
+  @include media((margin-top: (tablet: 20px)));
 }
 
 .paragraph__wrap {
@@ -251,7 +256,9 @@ input[type="checkbox"] {
 
 .paragraph__image {
   height: auto;
-  @include media((width: (desktop: 325px, mobile: 100%)));
+  width: 325px;
+
+  @include media((width: (mobile: 100%)));
 }
 
 .paragraph__wrap:first-child {
@@ -263,9 +270,17 @@ input[type="checkbox"] {
 }
 
 .paragraph__image-left {
-  @include media((margin: (desktop: 0 24px 1px 0, mobile: 0), float: (desktop: left, mobile: unset)));
+  margin: 0 24px 1px 0;
+  float: left;
+
+  @include media((margin: (mobile: 0),
+      float: (mobile: unset)));
 }
 
 .paragraph__image-right {
-  @include media((margin: (desktop: 0 0px 1px 24px, mobile: 0), float: (desktop: right, mobile: unset)));
+  margin: 0 0px 1px 24px;
+  float: right;
+
+  @include media((margin: (mobile: 0),
+      float: (mobile: unset)));
 }

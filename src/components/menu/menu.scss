@@ -11,15 +11,21 @@ input[type=checkbox] {
 .menu__column-left {
   top: 0;
   right: 0;
-  @include media((width: (dekstop: fit-content, sm_laptop: 100%, tablet: unset),
+  width: fit-content;
+  margin-right: 10px;
+
+  @include media((width: (sm_laptop: 100%, tablet: unset),
       align-self: (sm_laptop: center),
-      margin-right: (desktop: 10px, sm_laptop: 0),
+      margin-right: (sm_laptop: 0),
       position: (tablet: absolute),
     ));
 }
 
 .menu__column-right {
-  @include media((margin-left: (desktop: 10px, sm_laptop: 0)));
+  margin-right: 10px;
+
+  @include media((margin-left: (sm_laptop: 0),
+      margin-right: (tablet: 0)));
 }
 
 .menu__title {
@@ -37,9 +43,11 @@ input[type=checkbox] {
   margin-left: 0;
   display: block;
   transition: 0.4s ease all;
+  width: 296px;
+  left: 0;
 
-  @include media((left: (desktop: 0, tablet: unset),
-      width: (desktop: 296px, sm_laptop: 100%, tablet: 100vw),
+  @include media((left: (tablet: unset),
+      width: (sm_laptop: 100%, tablet: 100vw),
       right: (tablet: 0),
       display: (sm_laptop: block)));
 }
@@ -49,18 +57,25 @@ input[type=checkbox] {
   transition: 0.4s ease all;
   overflow: hidden;
   box-sizing: border-box;
+  display: block;
+  width: 0;
+  padding: 20px 8px 12px;
+  position: relative;
+  top: -20px;
+  left: -200%;
+  border-radius: 0 10px 10px 0;
+  margin-left: -200%;
 
-  @include media((display: (desktop: block, sm_laptop: none, tablet: block),
-      width: (desktop: 0),
+  @include media((display: (sm_laptop: none, tablet: block),
       height: (tablet: 100vh),
-      padding: (desktop: 20px 8px 12px, tablet: 40px 8px 12px),
-      margin: (desktop: 0 0 0 -200%, tablet: 0),
-      position: (desktop: relative, tablet: fixed),
-      top: (desktop: -20px, tablet: 0),
-      left: (desktop: -200%, tablet: unset),
+      padding: (tablet: 40px 8px 12px),
+      margin: (tablet: 0),
+      position: (tablet: fixed),
+      top: (tablet: 0),
+      left: (tablet: unset),
       right: (tablet: -100%),
       z-index: (tablet: 100),
-      border-radius: (desktop: 0 10px 10px 0, tablet: 0),
+      border-radius: (tablet: 0),
       overflow: (tablet: scroll)));
 }
 

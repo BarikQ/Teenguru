@@ -5,8 +5,9 @@
   margin: 0 auto;
   overflow: hidden;
   display: flex;
-  @include media((padding: (desktop: 40px 0,
-        laptop: 40px,
+  padding: 40px 0;
+
+  @include media((padding: (laptop: 40px,
         tablet: 20px),
       flex-direction: (tablet: column,
       ),
@@ -20,7 +21,9 @@
 }
 
 .article__title {
-  @include media((font-size: (desktop: 36px, tablet: 30px, mobile: 26px)));
+  font-size: 36px;
+
+  @include media((font-size: (tablet: 30px, mobile: 26px)));
 }
 
 .book__list-item {
@@ -32,29 +35,36 @@
   max-height: 426px;
   width: 100%;
   height: auto;
-  @include media((max-width: (desktop: 295px, mobile: unset),
-      max-height: (desktop: 426px, mobile: unset),
+  max-width: 295px;
+  max-height: 426px;
+
+  @include media((max-width: (mobile: unset),
+      max-height: (mobile: unset),
       padding: (tablet: 15px),
       align-self: (tablet: center)));
 }
 
 .book__text {
+  margin-left: 20px;
   max-width: 610px;
-  @include media((margin-left: (desktop: 20px, tablet: 0)));
+  @include media((margin-left: (tablet: 0)));
 }
 
 .book__title {
   font-weight: bold;
   letter-spacing: 0.03em;
   color: #f2386e;
+  font-size: 36px;
+  line-height: 44px;
 
   @include media((display: (tablet: none),
-      font-size: (desktop: 36px, tablet: 30px, mobile: 26px),
-      line-height: (desktop: 44px, tablet: 24px)));
+      font-size: (tablet: 30px, mobile: 26px),
+      line-height: (tablet: 24px)));
 }
 
 .book__title-mobile {
   margin-top: 15px;
+  display: none;
 
   .book__title {
     display: flex;
@@ -65,7 +75,7 @@
     display: flex;
   }
 
-  @include media((display: (desktop: none, tablet: unset)));
+  @include media((display: (tablet: unset)));
 }
 
 .book__author {
@@ -82,7 +92,9 @@
 
 .book__description-wrap {
   display: inline-block;
-  @include media((margin-top: (desktop: 16px, tablet: 0)));
+  margin-top: 16px;
+
+  @include media((margin-top: (tablet: 0)));
 }
 
 .book__description-about {

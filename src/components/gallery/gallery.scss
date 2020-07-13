@@ -3,7 +3,9 @@
 $d_flex: flex !important;
 
 .skill__gallery-unslick {
-  @include media((display: (desktop: none, tablet: $d_flex),
+  display: none !important;
+
+  @include media((display: (none),
       padding: (tablet: 20px 0)));
 }
 
@@ -14,10 +16,12 @@ $d_flex: flex !important;
 
 .skill__gallery {
   margin-top: 20px;
+  margin: 20px 0 0 0;
+  justify-content: space-between;
 
-  @include media((display: (tablet: none),
+  @include media((display: (tablet: flex),
       overflow-x: (tablet: scroll),
-      margin: (desktop: 20px 0 0 0, tablet: 12px 20px 0)));
+      margin: (tablet: 12px 20px 0)));
 
   .gallery__arrow {
     width: 40px;
@@ -43,12 +47,15 @@ $d_flex: flex !important;
 .gallery__nav {
   position: absolute;
   bottom: -84px;
+  right: 0;
 
-  @include media((right: (desktop: 0, tablet: 40px)));
+  @include media((right: (tablet: 40px)));
 }
 
 .gallery__nav-prev {
-  @include media((right: (desktop: 64px, tablet: 104px)));
+  right: 64px;
+
+  @include media((right: (tablet: 104px)));
 }
 
 .slick-list {

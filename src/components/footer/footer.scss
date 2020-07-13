@@ -2,6 +2,11 @@
 
 .footer {
   background: #00092B;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+
   @include media((padding: (laptop: 0 40px)));
 }
 
@@ -11,9 +16,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px 0;
+
   @include media((flex-direction: (tablet: column),
       text-align: (tablet: center),
-      padding: (desktop: 20px 0, tablet: 32px 0)));
+      padding: (tablet: 28px 0)));
 }
 
 .social__list {
@@ -39,7 +46,7 @@
     line-height: 17px;
   }
 
-  @include media((margin: (tablet: 0 0 40px)));
+  @include media((margin: (tablet: 0 0 30px)));
 }
 
 .social__item {

@@ -8,6 +8,12 @@
 
 body {
   background: #F5F3FA;
+  position: relative;
+  padding-bottom: 72px;
+  min-height: 100vh;
+  box-sizing: border-box;
+
+  @include media((padding-bottom: (tablet: 145px)));
 }
 
 ul {
@@ -146,9 +152,13 @@ button:focus {
   letter-spacing: 0.035em;
   color: #492996;
   z-index: 10;
-  @include media((left: (desktop: -60px, tablet: -34px, mobile: 20px),
-      top: (desktop: 30px, tablet: 18px),
-      font-size: (desktop: 36px, tablet: 24px)));
+  left: -60px;
+  top: 30px;
+  font-size: 36px;
+
+  @include media((left: (tablet: -34px, mobile: 20px),
+      top: (tablet: 18px),
+      font-size: (tablet: 24px)));
 }
 
 .title__figure {

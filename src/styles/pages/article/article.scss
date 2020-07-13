@@ -5,8 +5,9 @@
   margin: 0 auto;
   overflow: hidden;
   display: flex;
-  @include media((padding: (desktop: 40px 0,
-        laptop: 40px,
+  padding: 40px 0;
+
+  @include media((padding: (laptop: 40px,
         tablet: 20px,
       ),
       flex-direction: (tablet: column,
@@ -54,9 +55,11 @@
   line-height: 37px;
   letter-spacing: 0.05em;
   color: #F2386E;
+  font-size: 30px;
+  line-height: 37px;
 
-  @include media((font-size: (desktop: 30px, tablet: 24px, mobile: 20px),
-      line-height: (desktop: 37px, tablet: 24px)));
+  @include media((font-size: (tablet: 24px, mobile: 20px),
+      line-height: (tablet: 24px)));
 }
 
 .head__number {
@@ -111,9 +114,11 @@
   font-weight: bold;
   text-align: center;
   color: #292929;
+  font-size: 30px;
+  line-height: 37px;
 
-  @include media((font-size: (desktop: 30px, tablet: 24px, mobile: 20px),
-      line-height: (desktop: 37px, tablet: 24px, mobile: 22px)));
+  @include media((font-size: (tablet: 24px, mobile: 20px),
+      line-height: (tablet: 24px, mobile: 22px)));
 }
 
 .quote__author {

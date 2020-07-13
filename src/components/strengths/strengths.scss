@@ -7,8 +7,9 @@
   background: #FFFFFF;
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
+  width: 295px;
 
-  @include media((width: (desktop: 295px, mobile: 100%)));
+  @include media((width: (mobile: 100%)));
 }
 
 .strengths__title {
