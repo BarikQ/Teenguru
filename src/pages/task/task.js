@@ -5,18 +5,9 @@ import "./styles/pages/task/task.scss";
 
 import { Header, Footer, Menu, ArticleList, Callback, NavArrows, RouteLine, Strengths, ModuleBox, Table } from "./components";
 
-import { ReactComponent as Lock } from "./assets/images/modules/dist/Lock.svg";
-import { ReactComponent as ArrowBlack } from "./assets/images/arrow_black.svg";
-import { ReactComponent as Arrow } from "./assets/images/arrow.svg";
-
-import Book1Src from "./assets/images/books/book_1.png";
-import Book2Src from "./assets/images/books/book_2.png";
-import Book3Src from "./assets/images/books/book_3.png";
 import TriangleSrc from "./assets/images/triangle.png";
 import CircleSrc from "./assets/images/circle.png";
 import BoxSrc from "./assets/images/box.png";
-import Text1Src from "./assets/images/text/img_1.png"
-import Text2Src from "./assets/images/text/img_2.png"
 
 function App() {
   return (
@@ -31,7 +22,7 @@ function App() {
         <div className="menu__column menu__column-right">
           <div className="column__article">
             <div className="article__title-wrap">
-              <img className="title__figure" src={CircleSrc} alt="" />
+              <img className="title__figure" src={BoxSrc} alt="" />
 
               <h3 className="article__title">
                 Как проходить модуль "Что такое стартап?"
