@@ -247,6 +247,358 @@ export default function Menu() {
               </div>
             </div>
           </li>
+          <li>
+            <div className="menu__module menu__module-close">
+              <input
+                className="module__contents-open"
+                type="checkbox"
+                name=""
+                id="module-5"
+                disabled
+              />
+
+              <label className="module__label" htmlFor="module-5">
+                <div className="label__text">
+                  <span className="module__number">Модуль 5.</span>
+
+                  <h4 className="module__title">Финансы</h4>
+                </div>
+
+                <Lock className="module__lock" />
+                <ArrowBlack className="module__arrow" />
+              </label>
+
+              <div className="module__contents">
+                <ul className="content__list">
+                  <li className="list__item">
+                    <a href="localhost:3000">
+                      Притча про торговца обувью - показывает как влияет взгляд
+                      на ситуацию.
+                    </a>
+                  </li>
+                  <li className="list__item">
+                    <a href="localhost:3000">Что влияет на мышление?</a>
+                  </li>
+                  <li className="list__item"><a href="localhost:3000">Мышление предпринимателя.</a></li>
+                  <li className="list__item">
+                    <a href="localhost:3000">Способы развития разных типов мышления.</a>
+                  </li>
+                  <li className="list__item">
+                    <a href="localhost:3000">Задание: как из проблемы сделать задачу? </a>
+                  </li>
+                  <li className="list__item list__item-test"><a href="localhost:3000">ТЕСТ</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div className="menu__module menu__module-close">
+              <input
+                className="module__contents-open"
+                type="checkbox"
+                name=""
+                id="module-5"
+                disabled
+              />
+
+              <label className="module__label" htmlFor="module-5">
+                <div className="label__text">
+                  <span className="module__number">Модуль 5.</span>
+
+                  <h4 className="module__title">Финансы</h4>
+                </div>
+
+                <Lock className="module__lock" />
+                <ArrowBlack className="module__arrow" />
+              </label>
+
+              <div className="module__contents">
+                <ul className="content__list">
+                  <li className="list__item">
+                    <a href="localhost:3000">
+                      Притча про торговца обувью - показывает как влияет взгляд
+                      на ситуацию.
+                    </a>
+                  </li>
+                  <li className="list__item">
+                    <a href="localhost:3000">Что влияет на мышление?</a>
+                  </li>
+                  <li className="list__item"><a href="localhost:3000">Мышление предпринимателя.</a></li>
+                  <li className="list__item">
+                    <a href="localhost:3000">Способы развития разных типов мышления.</a>
+                  </li>
+                  <li className="list__item">
+                    <a href="localhost:3000">Задание: как из проблемы сделать задачу? </a>
+                  </li>
+                  <li className="list__item list__item-test"><a href="localhost:3000">ТЕСТ</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div className="menu__module menu__module-close">
+              <input
+                className="module__contents-open"
+                type="checkbox"
+                name=""
+                id="module-5"
+                disabled
+              />
+
+              <label className="module__label" htmlFor="module-5">
+                <div className="label__text">
+                  <span className="module__number">Модуль 5.</span>
+
+                  <h4 className="module__title">Финансы</h4>
+                </div>
+
+                <Lock className="module__lock" />
+                <ArrowBlack className="module__arrow" />
+              </label>
+
+              <div className="module__contents">
+                <ul className="content__list">
+                  <li className="list__item">
+                    <a href="localhost:3000">
+                      Притча про торговца обувью - показывает как влияет взгляд
+                      на ситуацию.
+                    </a>
+                  </li>
+                  <li className="list__item">
+                    <a href="localhost:3000">Что влияет на мышление?</a>
+                  </li>
+                  <li className="list__item"><a href="localhost:3000">Мышление предпринимателя.</a></li>
+                  <li className="list__item">
+                    <a href="localhost:3000">Способы развития разных типов мышления.</a>
+                  </li>
+                  <li className="list__item">
+                    <a href="localhost:3000">Задание: как из проблемы сделать задачу? </a>
+                  </li>
+                  <li className="list__item list__item-test"><a href="localhost:3000">ТЕСТ</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div className="menu__module menu__module-close">
+              <input
+                className="module__contents-open"
+                type="checkbox"
+                name=""
+                id="module-5"
+                disabled
+              />
+
+              <label className="module__label" htmlFor="module-5">
+                <div className="label__text">
+                  <span className="module__number">Модуль 5.</span>
+
+                  <h4 className="module__title">Финансы</h4>
+                </div>
+
+                <Lock className="module__lock" />
+                <ArrowBlack className="module__arrow" />
+              </label>
+
+              <div className="module__contents">
+                <ul className="content__list">
+                  <li className="list__item">
+                    <a href="localhost:3000">
+                      Притча про торговца обувью - показывает как влияет взгляд
+                      на ситуацию.
+                    </a>
+                  </li>
+                  <li className="list__item">
+                    <a href="localhost:3000">Что влияет на мышление?</a>
+                  </li>
+                  <li className="list__item"><a href="localhost:3000">Мышление предпринимателя.</a></li>
+                  <li className="list__item">
+                    <a href="localhost:3000">Способы развития разных типов мышления.</a>
+                  </li>
+                  <li className="list__item">
+                    <a href="localhost:3000">Задание: как из проблемы сделать задачу? </a>
+                  </li>
+                  <li className="list__item list__item-test"><a href="localhost:3000">ТЕСТ</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div className="menu__module menu__module-close">
+              <input
+                className="module__contents-open"
+                type="checkbox"
+                name=""
+                id="module-5"
+                disabled
+              />
+
+              <label className="module__label" htmlFor="module-5">
+                <div className="label__text">
+                  <span className="module__number">Модуль 5.</span>
+
+                  <h4 className="module__title">Финансы</h4>
+                </div>
+
+                <Lock className="module__lock" />
+                <ArrowBlack className="module__arrow" />
+              </label>
+
+              <div className="module__contents">
+                <ul className="content__list">
+                  <li className="list__item">
+                    <a href="localhost:3000">
+                      Притча про торговца обувью - показывает как влияет взгляд
+                      на ситуацию.
+                    </a>
+                  </li>
+                  <li className="list__item">
+                    <a href="localhost:3000">Что влияет на мышление?</a>
+                  </li>
+                  <li className="list__item"><a href="localhost:3000">Мышление предпринимателя.</a></li>
+                  <li className="list__item">
+                    <a href="localhost:3000">Способы развития разных типов мышления.</a>
+                  </li>
+                  <li className="list__item">
+                    <a href="localhost:3000">Задание: как из проблемы сделать задачу? </a>
+                  </li>
+                  <li className="list__item list__item-test"><a href="localhost:3000">ТЕСТ</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div className="menu__module menu__module-close">
+              <input
+                className="module__contents-open"
+                type="checkbox"
+                name=""
+                id="module-5"
+                disabled
+              />
+
+              <label className="module__label" htmlFor="module-5">
+                <div className="label__text">
+                  <span className="module__number">Модуль 5.</span>
+
+                  <h4 className="module__title">Финансы</h4>
+                </div>
+
+                <Lock className="module__lock" />
+                <ArrowBlack className="module__arrow" />
+              </label>
+
+              <div className="module__contents">
+                <ul className="content__list">
+                  <li className="list__item">
+                    <a href="localhost:3000">
+                      Притча про торговца обувью - показывает как влияет взгляд
+                      на ситуацию.
+                    </a>
+                  </li>
+                  <li className="list__item">
+                    <a href="localhost:3000">Что влияет на мышление?</a>
+                  </li>
+                  <li className="list__item"><a href="localhost:3000">Мышление предпринимателя.</a></li>
+                  <li className="list__item">
+                    <a href="localhost:3000">Способы развития разных типов мышления.</a>
+                  </li>
+                  <li className="list__item">
+                    <a href="localhost:3000">Задание: как из проблемы сделать задачу? </a>
+                  </li>
+                  <li className="list__item list__item-test"><a href="localhost:3000">ТЕСТ</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div className="menu__module menu__module-close">
+              <input
+                className="module__contents-open"
+                type="checkbox"
+                name=""
+                id="module-5"
+                disabled
+              />
+
+              <label className="module__label" htmlFor="module-5">
+                <div className="label__text">
+                  <span className="module__number">Модуль 5.</span>
+
+                  <h4 className="module__title">Финансы</h4>
+                </div>
+
+                <Lock className="module__lock" />
+                <ArrowBlack className="module__arrow" />
+              </label>
+
+              <div className="module__contents">
+                <ul className="content__list">
+                  <li className="list__item">
+                    <a href="localhost:3000">
+                      Притча про торговца обувью - показывает как влияет взгляд
+                      на ситуацию.
+                    </a>
+                  </li>
+                  <li className="list__item">
+                    <a href="localhost:3000">Что влияет на мышление?</a>
+                  </li>
+                  <li className="list__item"><a href="localhost:3000">Мышление предпринимателя.</a></li>
+                  <li className="list__item">
+                    <a href="localhost:3000">Способы развития разных типов мышления.</a>
+                  </li>
+                  <li className="list__item">
+                    <a href="localhost:3000">Задание: как из проблемы сделать задачу? </a>
+                  </li>
+                  <li className="list__item list__item-test"><a href="localhost:3000">ТЕСТ</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div className="menu__module menu__module-close">
+              <input
+                className="module__contents-open"
+                type="checkbox"
+                name=""
+                id="module-5"
+                disabled
+              />
+
+              <label className="module__label" htmlFor="module-5">
+                <div className="label__text">
+                  <span className="module__number">Модуль 5.</span>
+
+                  <h4 className="module__title">Финансы</h4>
+                </div>
+
+                <Lock className="module__lock" />
+                <ArrowBlack className="module__arrow" />
+              </label>
+
+              <div className="module__contents">
+                <ul className="content__list">
+                  <li className="list__item">
+                    <a href="localhost:3000">
+                      Притча про торговца обувью - показывает как влияет взгляд
+                      на ситуацию.
+                    </a>
+                  </li>
+                  <li className="list__item">
+                    <a href="localhost:3000">Что влияет на мышление?</a>
+                  </li>
+                  <li className="list__item"><a href="localhost:3000">Мышление предпринимателя.</a></li>
+                  <li className="list__item">
+                    <a href="localhost:3000">Способы развития разных типов мышления.</a>
+                  </li>
+                  <li className="list__item">
+                    <a href="localhost:3000">Задание: как из проблемы сделать задачу? </a>
+                  </li>
+                  <li className="list__item list__item-test"><a href="localhost:3000">ТЕСТ</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
         </ul>
       </div>
     </div>

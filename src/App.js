@@ -1,25 +1,19 @@
 import React from "react";
-import Gallery from "./components/gallery/gallery"
 
 import "./styles/main.scss";
-import "./styles/pages/modules/modules.scss";
+import "./styles/pages/books/books.scss";
 
 import { Header, Footer, Menu, ArticleList, Callback, NavArrows, RouteLine, Strengths, ModuleBox, Table } from "./components";
 
-import { ReactComponent as Lock } from "./assets/images/modules/dist/Lock.svg";
-import { ReactComponent as ArrowBlack } from "./assets/images/arrow_black.svg";
 import { ReactComponent as Arrow } from "./assets/images/arrow.svg";
-import { ReactComponent as Clock } from "./assets/images/clock.svg";
-import { ReactComponent as Quote } from "./assets/images/quote.svg";
 import { ReactComponent as Telegram } from "./assets/images/telegram.svg";
-import { ReactComponent as Thinking } from "./assets/images/modules/dist/thinking.svg";
-import { ReactComponent as Idea } from "./assets/images/modules/dist/idea.svg";
-import { ReactComponent as Metrics } from "./assets/images/modules/dist/metrics.svg";
-import { ReactComponent as Communication } from "./assets/images/modules/dist/communication.svg";
-import { ReactComponent as Finances } from "./assets/images/modules/dist/finances.svg";
-import { ReactComponent as Product } from "./assets/images/modules/dist/product.svg";
-import { ReactComponent as Auction } from "./assets/images/modules/dist/auction.svg";
-import { ReactComponent as Control } from "./assets/images/modules/dist/control.svg";
+
+import Book1Src from "./assets/images/books/book_1.png";
+import Book2Src from "./assets/images/books/book_2.png";
+import Book3Src from "./assets/images/books/book_3-no-bg.png";
+import TriangleSrc from "./assets/images/triangle.png";
+import CircleSrc from "./assets/images/circle.png";
+import BoxSrc from "./assets/images/box.png";
 
 function App() {
   return (
@@ -31,386 +25,180 @@ function App() {
       <main className="main">
         <Menu />
 
-        <div className="skill__container skill__container-hard">
-          <h2 className="skill__title">Hard Skills</h2>
+        <div className="menu__column menu__column-right">
+          <div className="column__article">
+            <div className="article__title-wrap">
+              <img className="title__figure" src={CircleSrc} alt="" />
 
-          <p className="skill__description">
-            Технические способности или наборы навыков, которые легко определить
-            количественно и которые можно наглядно продемонстрировать.
-          </p>
-
-          <div className="skill__gallery skill__gallery-unslick">
-            <div className="module__card module__card-open">
-              <Thinking className="module__icon" />
-
-              <div className="module__description">
-                <span className="module__number">Модуль 1.</span>
-
-                <h4 className="module__title">Мышление</h4>
-
-                <p className="module__description">
-                  Роль мышление в бизнесе, особенности и нюансы
-                  предпринимательского мышления в сравнении с обычным. Как
-                  сделать мышление более эффективным для бизнеса.
-                </p>
-              </div>
-
-              <div className="module__buttons">
-                <button className="module__button module__button-start">
-                  <span className="button__text">Начать</span>
-                </button>
-
-                <span className="module__price text-price">
-                  <span>2 574</span> р.
-                </span>
-
-                <div className="button__wrap">
-                  <button className="module__button module__button-buy">
-                    <span className="button__text">Купить</span>
-                  </button>
-                </div>
-
-                <Lock className="module__lock" />
-              </div>
+              <h3 className="article__title">
+                Топ - 3 книг для развития мышления
+              </h3>
             </div>
 
-            <div className="module__card module__card-buy">
-              <Idea className="module__icon" />
+            <div className="article__books">
+              <div className="book__list-item">
+                <div className="book__title-mobile">
+                  <h4 className="book__title">Гибкое сознание</h4>
 
-              <div className="module__description">
-                <span className="module__number">Модуль 2.</span>
-
-                <h4 className="module__title">Поиск идеи</h4>
-
-                <p className="module__description">
-                  Где брать идеи, должна ли быть идея креативной? Как развивать
-                  креативность для бизнеса? Как понять что идея “выстрелит”?
-                </p>
-              </div>
-
-              <div className="module__buttons">
-                <button className="module__button module__button-start">
-                  <span className="button__text">Начать</span>
-                </button>
-
-                <span className="module__price text-price">
-                  <span>2 574</span> р.
-                </span>
-
-                <div className="button__wrap">
-                  <button className="module__button module__button-buy">
-                    <span className="button__text">Купить</span>
-                  </button>
+                  <span className="book__author">Кэрол Дуэк</span>
                 </div>
 
-                <Lock className="module__lock" />
+                <img src={Book1Src} alt="" className="book__image" />
+
+                <div className="book__text">
+                  <h4 className="book__title">Гибкое сознание</h4>
+
+                  <span className="book__author">Кэрол Дуэк</span>
+
+                  <p className="book__description-wrap">
+                    <span className="book__description-about">О чём?</span>
+                    <p className="book__description">
+                      О том, что интеллект и талант - это не все что вам нужно
+                      для успеха и том как таланты могут стать преградой на пути
+                      к нему. Талантливые люди пытаются доказать всем, как они
+                      умны и талантливы, вместо того, чтобы развивать их. Кроме
+                      того, они верят, что талант ведет к успеху сам по себе. И
+                      они ошибаются. Переход к гибкому сознанию усиливает
+                      мотивацию и продуктивность в бизнесе, образовании и
+                      спорте. Он обогащает личные отношения.
+                    </p>
+                    <span className="book__description-about">
+                      Когда вы прочитаете эту книгу, вы узнаете как это
+                      происходит. Купить можно здесь:
+                    </span>
+                  </p>
+
+                  <a
+                    href="https://oz.by/books/more10321131.html?sbtoken=2e56e15bbccb5c6c240a51da0d725ff2"
+                    className="book__link"
+                  >
+                    https://oz.by/books/more10321131.html?sbtoken=2e56e15bbccb5c6c240a51da0d725ff2
+                  </a>
+                </div>
               </div>
-            </div>
 
-            <div className="module__card module__card-lock">
-              <Metrics className="module__icon" />
+              <div className="book__list-item">
+                <div className="book__title-mobile">
+                  <h4 className="book__title">Думай медленно, решай быстро</h4>
 
-              <div className="module__description">
-                <span className="module__number">Модуль 3.</span>
-
-                <h4 className="module__title">Маркетинг</h4>
-
-                <p className="module__description">
-                  Инвестирование в стартапы на разных его стадиях и работа
-                  синдикатов. Доступ к документам для оценки стартапов и
-                  структурирования инвестиций.
-                </p>
-              </div>
-
-              <div className="module__buttons">
-                <button className="module__button module__button-start">
-                  <span className="button__text">Начать</span>
-                </button>
-
-                <span className="module__price text-price">
-                  <span>2 574</span> р.
-                </span>
-
-                <div className="button__wrap">
-                  <button className="module__button module__button-buy">
-                    <span className="button__text">Купить</span>
-                  </button>
+                  <span className="book__author">Дэниел Канеман</span>
                 </div>
 
-                <Lock className="module__lock" />
+                <img src={Book2Src} alt="" className="book__image" />
+
+                <div className="book__text">
+                  <h4 className="book__title">Думай медленно, решай быстро</h4>
+
+                  <span className="book__author">Дэниел Канеман</span>
+
+                  <p className="book__description-wrap">
+                    <span className="book__description-about">О чём?</span>
+                    <p className="book__description">
+                      О том, что наши действия и поступки определены нашими
+                      мыслями. Но всегда ли мы контролируем наше мышление? В
+                      книге можно найти объяснение нашим нерациональные
+                      поступкам и тому как мы принимаем неверные решения, исходя
+                      из 2 систем мышления: медленной и быстрой.
+                    </p>
+                    <span className="book__description-about">
+                      О том как это работает, читайте в книге. Купить можно
+                      здесь:
+                    </span>
+                  </p>
+
+                  <a
+                    href="https://oz.by/books/more10342348.html?sbtoken=80711086aa66c7aaed79357773fb0fa3"
+                    className="book__link"
+                  >
+                    https://oz.by/books/more10342348.html?sbtoken=80711086aa66c7aaed79357773fb0fa3
+                  </a>
+                </div>
               </div>
-            </div>
 
-            <div className="module__card module__card-lock">
-              <Communication className="module__icon" />
+              <div className="book__list-item">
+                <div className="book__title-mobile">
+                  <h4 className="book__title">
+                    Безграничный разум. Учиться, учить и жить без ограничений
+                  </h4>
 
-              <div className="module__description">
-                <span className="module__number">Модуль 4.</span>
-
-                <h4 className="module__title">Коммуникация</h4>
-
-                <p className="module__description">
-                  Отправить письмо партнеру, презентовать проект инвестору - это
-                  все коммуникация. Основные правила для конструктивного
-                  общения.
-                </p>
-              </div>
-
-              <div className="module__buttons">
-                <button className="module__button module__button-start">
-                  <span className="button__text">Начать</span>
-                </button>
-
-                <span className="module__price text-price">
-                  <span>2 574</span> р.
-                </span>
-
-                <div className="button__wrap">
-                  <button className="module__button module__button-buy">
-                    <span className="button__text">Купить</span>
-                  </button>
+                  <span className="book__author">Джо Боулер</span>
                 </div>
 
-                <Lock className="module__lock" />
-              </div>
-            </div>
+                <img src={Book3Src} alt="" className="book__image" />
 
-            <div className="module__card module__card-lock">
-              <Finances className="module__icon" />
+                <div className="book__text">
+                  <h4 className="book__title">
+                    Безграничный разум. Учиться, учить и жить без ограничений
+                  </h4>
 
-              <div className="module__description">
-                <span className="module__number">Модуль 5.</span>
+                  <span className="book__author">Джо Боулер</span>
 
-                <h4 className="module__title">Финансы</h4>
+                  <p className="book__description-wrap">
+                    <span className="book__description-about">О чём?</span>
 
-                <p className="module__description">
-                  Разница между группой и командой. Лидерство - что это?
-                  Лидерами рождаются или становятся? Собрать команду которая
-                  работает как единый механизм.
-                </p>
-              </div>
+                    <p className="book__description">
+                      О том, что настало время забыть все чему вас учили до
+                      этого. Автор говорит о том, что врожденной склонности к
+                      тому или иному предмету не существует. Это иллюзия. Ничто
+                      в этом мире не является залогом ваших выдающихся успехов,
+                      кроме ошибок. В книге вы узнаете, что ошибки это лучшее
+                      что может с вами произойти, и как сделать так чтобы они
+                      работали исключительно на вас.
+                    </p>
 
-              <div className="module__buttons">
-                <button className="module__button module__button-start">
-                  <span className="button__text">Начать</span>
-                </button>
+                    <span className="book__description-about">
+                      Купить можно здесь:
+                    </span>
+                  </p>
 
-                <span className="module__price text-price">
-                  <span>2 574</span> р.
-                </span>
-
-                <div className="button__wrap">
-                  <button className="module__button module__button-buy">
-                    <span className="button__text">Купить</span>
-                  </button>
+                  <a
+                    href="https://oz.by/books/more10913678.html?sbtoken=2fcf35f50fefd514ed9b933175646f5c"
+                    className="book__link"
+                  >
+                    https://oz.by/books/more10913678.html?sbtoken=2fcf35f50fefd514ed9b933175646f5c
+                  </a>
                 </div>
-
-                <Lock className="module__lock" />
               </div>
             </div>
           </div>
 
-          <Gallery className={"skill__gallery"} />
+          <div className="arrows__container">
+            <div className="button__wrap border-prev">
+              <button className="page__arrow page__arrow-prev">
 
-          <div className="skill__all">
-            <span className="module__price text-price">
-              <span>12 990</span> р.
-            </span>
-
-            <div className="button__wrap">
-              <button className="skill__buy button-def"><span>Купить весь курс</span></button>
+                <Arrow />
+              </button>
             </div>
-          </div>
-        </div>
+            <div className="button__wrap border-next">
+              <button className="page__arrow page__arrow-next">
 
-        <div className="skill__container skill__container-soft">
-          <h2 className="skill__title">Soft Skills</h2>
-
-          <p className="skill__description">
-            Позволяют быть успешным независимо от специфики деятельности и
-            направления, в котором работает человек.
-          </p>
-
-          <div className="skill__gallery skill__gallery-unslick">
-            <div className="module__card module__card-buy">
-              <Product className="module__icon" />
-
-              <div className="module__description">
-                <span className="module__number">Модуль 1.</span>
-
-                <h4 className="module__title">Формирование продукта</h4>
-
-                <p className="module__description">
-                  Разница между бизнесом и стартапом. Из каких компонентов
-                  состоит любой бизнес, а также без чего он не возможен. Что
-                  такое MVP. Как и для чего составлять бизнес модель.
-                </p>
-              </div>
-
-              <div className="module__buttons">
-                <button className="module__button module__button-start">
-                  <span className="button__text">Начать</span>
-                </button>
-
-                <span className="module__price text-price">
-                  <span>2 574</span> р.
-                </span>
-
-                <div className="button__wrap">
-                  <button className="module__button module__button-buy">
-                    <span className="button__text">Купить</span>
-                  </button>
-                </div>
-
-                <Lock className="module__lock" />
-              </div>
-            </div>
-
-            <div className="module__card module__card-buy">
-              <Metrics className="module__icon" />
-
-              <div className="module__description">
-                <span className="module__number">Модуль 1.</span>
-
-                <h4 className="module__title">Маркетинг</h4>
-
-                <p className="module__description">
-                  Понятие и портрет целевой аудитории. Выход продукта на
-                  рынок.Каналы продвижения. Смм, пиар.
-                </p>
-              </div>
-
-              <div className="module__buttons">
-                <button className="module__button module__button-start">
-                  <span className="button__text">Начать</span>
-                </button>
-
-                <span className="module__price text-price">
-                  <span>2 574</span> р.
-                </span>
-
-                <div className="button__wrap">
-                  <button className="module__button module__button-buy">
-                    <span className="button__text">Купить</span>
-                  </button>
-                </div>
-
-                <Lock className="module__lock" />
-              </div>
-            </div>
-
-            <div className="module__card module__card-buy">
-              <Auction className="module__icon" />
-
-              <div className="module__description">
-                <span className="module__number">Модуль 1.</span>
-
-                <h4 className="module__title">Юридические аспекты</h4>
-
-                <p className="module__description">
-                  Легальный бизнес в 16 - это миф? Что говорит закон про
-                  подростковый бизнес. Сколько нужно денег и куда идти чтобы
-                  легально стать бизнесменом.
-                </p>
-              </div>
-
-              <div className="module__buttons">
-                <button className="module__button module__button-start">
-                  <span className="button__text">Начать</span>
-                </button>
-
-                <span className="module__price text-price">
-                  <span>2 574</span> р.
-                </span>
-
-                <div className="button__wrap">
-                  <button className="module__button module__button-buy">
-                    <span className="button__text">Купить</span>
-                  </button>
-                </div>
-
-                <Lock className="module__lock" />
-              </div>
-            </div>
-
-            <div className="module__card module__card-buy">
-              <Finances className="module__icon" />
-
-              <div className="module__description">
-                <span className="module__number">Модуль 1.</span>
-
-                <h4 className="module__title">Финансы</h4>
-
-                <p className="module__description">
-                  Где брать деньги на развитие бизнеса? В каком финансовом
-                  состоянии бизнес на данный момент? Кто такие инвесторы и
-                  бизнес - ангелы. Какой инвестор нужен?
-                </p>
-              </div>
-
-              <div className="module__buttons">
-                <button className="module__button module__button-start">
-                  <span className="button__text">Начать</span>
-                </button>
-
-                <span className="module__price text-price">
-                  <span>2 574</span> р.
-                </span>
-
-                <div className="button__wrap">
-                  <button className="module__button module__button-buy">
-                    <span className="button__text">Купить</span>
-                  </button>
-                </div>
-
-                <Lock className="module__lock" />
-              </div>
-            </div>
-
-            <div className="module__card module__card-buy">
-              <Control className="module__icon" />
-
-              <div className="module__description">
-                <span className="module__number">Модуль 1.</span>
-
-                <h4 className="module__title">Управление проектом</h4>
-
-                <p className="module__description">
-                  Понять эффективность проекта. Планировать и организовывать
-                  работу с наибольшей эффективностью. Модель спиральной динамики
-                  развития проекта.
-                </p>
-              </div>
-
-              <div className="module__buttons">
-                <button className="module__button module__button-start">
-                  <span className="button__text">Начать</span>
-                </button>
-
-                <span className="module__price text-price">
-                  <span>2 574</span> р.
-                </span>
-
-                <div className="button__wrap">
-                  <button className="module__button module__button-buy">
-                    <span className="button__text">Купить</span>
-                  </button>
-                </div>
-
-                <Lock className="module__lock" />
-              </div>
+                <Arrow />
+              </button>
             </div>
           </div>
 
-          <Gallery className={"skill__gallery"} />
+          <div className="callback__container">
+            <div className="button__wrap border-callback">
+              <button className="callback__button">
 
-          <div className="skill__all">
-            <span className="module__price text-price">
-              <span>12 990</span> р.
-            </span>
+                <span>Перейти к следующему модулю</span>
+              </button>
+            </div>
 
-            <div className="button__wrap">
-              <button className="skill__buy button-def"><span>Купить весь курс</span></button>
+            <div className="button__wrap border-callback">
+              <button className="callback__button">
+
+                <span>Вопрос эксперту </span>
+              </button>
+            </div>
+
+            <div className="button__wrap border-callback">
+              <a className="callback__button" href="localhost:3000">
+
+                <span>
+                  Поддержка <Telegram />
+                </span>
+              </a>
             </div>
           </div>
         </div>

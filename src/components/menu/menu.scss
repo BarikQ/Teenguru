@@ -44,27 +44,30 @@ input[type=checkbox] {
   display: block;
   transition: 0.4s ease all;
   width: 296px;
+  height: auto;
   left: 0;
 
   @include media((left: (tablet: unset),
       width: (sm_laptop: 100%, tablet: 100vw),
+      height: (tablet: 100vh),
       right: (tablet: 0),
       display: (sm_laptop: block)));
 }
 
 .modules__menu {
-  background: #EDEAF5;
-  transition: 0.4s ease all;
-  overflow: hidden;
-  box-sizing: border-box;
-  display: block;
   width: 0;
+  height: 0;
   padding: 20px 8px 12px;
   position: relative;
   top: -20px;
   left: -200%;
   border-radius: 0 10px 10px 0;
   margin-left: -200%;
+  background: #EDEAF5;
+  transition: 0.4s ease all;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: block;
 
   @include media((display: (sm_laptop: none, tablet: block),
       height: (tablet: 100vh),

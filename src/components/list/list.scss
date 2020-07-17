@@ -1,17 +1,21 @@
 .article__list {
   margin: 16px 0 0;
+  padding-left: 32px;
+  list-style-image: url('./../../assets/images/list/circle.png');
 }
 
 .article__list-item {
-  display: flex;
-  align-items: center;
+  padding: 0 0px 0 20px;
+  margin: 10px 0px;
+  position: relative;
 }
 
 .item__marker {
   flex: 0 0 auto;
+  display: none;
 }
 
 .item__text {
-  display: inline-block;
-  margin: 10px 0px 10px 20px;
+  position: relative;
+  top: -5px;
 }

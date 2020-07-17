@@ -4,24 +4,24 @@ import "./table.scss";
 
 export default function Table() {
   return (
-    <div className="table">
-      <div className="table__row">
-        <span className="table__item">Текст</span>
-        <span className="table__item">Текст</span>
-        <span className="table__item">Текст</span>
-        <span className="table__item">Текст</span>
-        <span className="table__item">Текст</span>
-        <span className="table__item">Текст</span>
-      </div>
+    <table className="table">
+      <tr className="table__row">
+        <td className="table__item">Текст</td>
+        <td className="table__item">Текст</td>
+        <td className="table__item">Текст</td>
+        <td className="table__item">Текст</td>
+        <td className="table__item">Текст</td>
+        <td className="table__item">Текст</td>
+      </tr>
 
-      <div className="table__row">
-        <span className="table__item">Текст</span>
-        <span className="table__item">Текст</span>
-        <span className="table__item">Текст</span>
-        <span className="table__item">Текст</span>
-        <span className="table__item">Текст</span>
-        <span className="table__item">Текст</span>
-      </div>
-    </div>
+      <tr className="table__row">
+        <td className="table__item">Текст</td>
+        <td className="table__item">Текст</td>
+        <td className="table__item">Текст</td>
+        <td className="table__item">Текст</td>
+        <td className="table__item">Текст</td>
+        <td className="table__item">Текст</td>
+      </tr>
+    </table>
   );
 }
