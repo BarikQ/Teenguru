@@ -15,6 +15,11 @@ ul {
   @include media((padding: (tablet: 0)));
 }
 
+.menu__column-left {
+  display: none !important;
+  @include media((display: (tablet: unset !important)));
+}
+
 .menu__column {
   display: none;
 
