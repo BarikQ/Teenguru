@@ -9,23 +9,23 @@ export default function ArticleList() {
   return (
     <ul className="article__list">
       <li className="article__list-item">
-        <span className="item__text">Что такое стартап?</span>
+        Что такое стартап?
       </li>
 
       <li className="article__list-item">
-        <span className="item__text">Чем стартап отличается от малого бизнеса?</span>
+        Чем стартап отличается от малого бизнеса?
       </li>
 
       <li className="article__list-item">
-        <span className="item__text">Что важно для успеха стартапа?</span>
+        Что важно для успеха стартапа?
       </li>
 
       <li className="article__list-item">
-        <span className="item__text">Можно ли подростку начать свой бизнес?</span>
+        Можно ли подростку начать свой бизнес?
       </li>
 
       <li className="article__list-item">
-        <span className="item__text">С чего начать свой бизнес?</span>
+        С чего начать свой бизнес?
       </li>
     </ul>
   );
