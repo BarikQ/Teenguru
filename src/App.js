@@ -1,7 +1,8 @@
 import React from "react";
+import Gallery from "./components/gallery/gallery"
 
 import "./styles/main.scss";
-import "./styles/pages/article/article.scss";
+import "./styles/pages/modules/modules.scss";
 
 import { Header, Footer, Menu, ArticleList, Callback, NavArrows, RouteLine, Strengths, ModuleBox, Table } from "./components";
 
@@ -10,15 +11,15 @@ import { ReactComponent as ArrowBlack } from "./assets/images/arrow_black.svg";
 import { ReactComponent as Arrow } from "./assets/images/arrow.svg";
 import { ReactComponent as Clock } from "./assets/images/clock.svg";
 import { ReactComponent as Quote } from "./assets/images/quote.svg";
-
-import Book1Src from "./assets/images/books/book_1.png";
-import Book2Src from "./assets/images/books/book_2.png";
-import Book3Src from "./assets/images/books/book_3.png";
-import TriangleSrc from "./assets/images/triangle.png";
-import CircleSrc from "./assets/images/circle.png";
-import BoxSrc from "./assets/images/box.png";
-import Text1Src from "./assets/images/text/img_1.png"
-import Text2Src from "./assets/images/text/img_2.png"
+import { ReactComponent as Telegram } from "./assets/images/telegram.svg";
+import { ReactComponent as Thinking } from "./assets/images/modules/dist/thinking.svg";
+import { ReactComponent as Idea } from "./assets/images/modules/dist/idea.svg";
+import { ReactComponent as Metrics } from "./assets/images/modules/dist/metrics.svg";
+import { ReactComponent as Communication } from "./assets/images/modules/dist/communication.svg";
+import { ReactComponent as Finances } from "./assets/images/modules/dist/finances.svg";
+import { ReactComponent as Product } from "./assets/images/modules/dist/product.svg";
+import { ReactComponent as Auction } from "./assets/images/modules/dist/auction.svg";
+import { ReactComponent as Control } from "./assets/images/modules/dist/control.svg";
 
 function App() {
   return (
@@ -30,179 +31,388 @@ function App() {
       <main className="main">
         <Menu />
 
-        <div className="menu__column menu__column-right">
-          <div className="column__article">
-            <div className="article__title-wrap">
-              <img className="title__figure" src={CircleSrc} alt="" />
+        <div className="skill__container skill__container-hard">
+          <h2 className="skill__title">Hard Skills</h2>
 
-              <h3 className="article__title">
-                Статья. <br />
-                <span className="article__title-sub">5 советов, которые помогут вам начать бизнес</span>
-              </h3>
-            </div>
+          <p className="skill__description">
+            Технические способности или наборы навыков, которые легко определить
+            количественно и которые можно наглядно продемонстрировать.
+          </p>
 
-            <div className="article__content">
+          <div className="skill__gallery skill__gallery-unslick">
+            <div className="module__card module__card-open">
+              <Thinking className="module__icon" />
 
-              <div className="article__block">
-                <div className="article__timing">
-                  <Clock className="timig__icon" />
+              <div className="module__description">
+                <span className="module__number">Модуль 1.</span>
 
-                  <h4 className="article__intro">5 минут чтения</h4>
+                <h4 className="module__title">Мышление</h4>
+
+                <p className="module__description">
+                  Роль мышление в бизнесе, особенности и нюансы
+                  предпринимательского мышления в сравнении с обычным. Как
+                  сделать мышление более эффективным для бизнеса.
+                </p>
+              </div>
+
+              <div className="module__buttons">
+                <button className="module__button module__button-start">
+                  <span className="button__text">Начать</span>
+                </button>
+
+                <span className="module__price text-price">
+                  <span>2 574</span> р.
+                </span>
+
+                <div className="button__wrap">
+                  <button className="module__button module__button-buy">
+                    <span className="button__text">Купить</span>
+                  </button>
                 </div>
 
-                <p className="block__paragraph">
-                  От продажи домашнего лимонада на улице за бешеные деньги до чистки семейного автомобиля — это действия предпринимателя-подростка, разминающего свои преждевременные бизнес-мускулы.
-                </p>
+                <Lock className="module__lock" />
+              </div>
+            </div>
 
-                <p className="block__paragraph">
-                  Но по мере того, как мы взрослеем, по ряду причин большинство из нас перестают продолжать эти предпринимательские эксперименты. Почему? Почему мы рано или поздно останавливаемся? Перестаем рисковать? Мечтать? Пробовать? В конце концов, нужна всего одна хорошая идея (возможно, после нескольких неудачных идей), ну а пока ...
-                </p>
+            <div className="module__card module__card-buy">
+              <Idea className="module__icon" />
 
-                <p className="block__paragraph">
-                  БУМ! Страйк! Внезапно известный блогер делает с вами интервью и вас приглашают в дом Илона Маска на званый обед... Почему нет? Ну, возможно, нет, но мы уверены, что ваша мама будет очень горда и сделает кучу фотографий и пригласит вас по крайней мере из вашей спальни на ужин. Это мило, правда?
-                </p>
+              <div className="module__description">
+                <span className="module__number">Модуль 2.</span>
 
-                <p className="block__paragraph">
-                  Двигаемся дальше....
-                </p>
+                <h4 className="module__title">Поиск идеи</h4>
 
-                <p className="block__paragraph">
-                  Помимо всего блеска и гламура, старт собственного бизнеса может дать нечто большее, что не всегда можно измерить деньгами. Его истинная ценность заключается в том, что вы извлекаете уроки из этого опыта, особенно когда вы еще подросток.
-                </p>
-
-                <p className="block__paragraph">
-                  Редко, если вообще когда-либо, ваше первое коммерческое начинание превратится в прибыльный бизнес. Хотя это вполне возможно, и было бы здорово, конечно. Но, несмотря на то, что ваш первый бизнес может потерпеть неудачу, вы получите бесценный опыт, который поможет вам добиться успеха в будущем. Так зачем откладывать? Начните бизнес сегодня!
-                </p>
-
-                <p className="block__paragraph">
-                  Серьезно, средняя школа — лучшее место и время для вас, чтобы начать свой бизнес! Вам не нужно думать о банковском счете, потому что, скорее всего, вы еще живете с родителями. Так что вы можете просто сосредоточиться на накоплении опыта, развитии своей идеи и создании своего резюме.
-                  Более того, открытие бизнеса в старших классах может сделать вас очень желанными в некоторых лучших колледжах и университетах мира!
-                  Но прежде чем мы перейдем к урокам по построению бизнеса, давайте посмотрим, что вам может сделать первый шаг.
+                <p className="module__description">
+                  Где брать идеи, должна ли быть идея креативной? Как развивать
+                  креативность для бизнеса? Как понять что идея “выстрелит”?
                 </p>
               </div>
 
-              <div className="article__block">
-                <h3 className="article__title article__title-sec">
-                  5 советов, которые помогут вам начать
-                  бизнес
-                </h3>
+              <div className="module__buttons">
+                <button className="module__button module__button-start">
+                  <span className="button__text">Начать</span>
+                </button>
 
-                <p className="block__paragraph">
-                  Прежде чем мы начнем разбираться в подробностях и тонкостях создания бизнеса, откроем вам небольшой секрет: никто из тех, кто начинает свой бизнес впервые, не знает, что они делают.
-                </p>
+                <span className="module__price text-price">
+                  <span>2 574</span> р.
+                </span>
 
-                <p className="block__paragraph">
-                  Шутки в сторону.
-                </p>
+                <div className="button__wrap">
+                  <button className="module__button module__button-buy">
+                    <span className="button__text">Купить</span>
+                  </button>
+                </div>
 
-                <p className="block__paragraph">
-                  Особенно на ранних этапах, речь идет не о том, что вы знаете, а об обучении на ошибках. Сосредоточьтесь на том, чего вы не знаете, а также на обучении и развитии. Это приводит нас к нашему первому совету:
+                <Lock className="module__lock" />
+              </div>
+            </div>
+
+            <div className="module__card module__card-lock">
+              <Metrics className="module__icon" />
+
+              <div className="module__description">
+                <span className="module__number">Модуль 3.</span>
+
+                <h4 className="module__title">Маркетинг</h4>
+
+                <p className="module__description">
+                  Инвестирование в стартапы на разных его стадиях и работа
+                  синдикатов. Доступ к документам для оценки стартапов и
+                  структурирования инвестиций.
                 </p>
               </div>
 
-              <div className="article__block">
-                <h5 className="block__head">
-                  <span className="head__number">1</span>
-                  Знайте, что вы будете делать<br /> ошибки и учиться на них.
-                </h5>
+              <div className="module__buttons">
+                <button className="module__button module__button-start">
+                  <span className="button__text">Начать</span>
+                </button>
 
-                <p className="block__paragraph">
-                  Компании, которые в конечном итоге преуспевают, просто делают меньше ошибок. Вот почему открытие бизнеса в молодом возрасте может быть таким полезным. Прежде чем вы станете взрослым, вы узнаете обо всех небольших ошибках, которые вы совершили в первый раз, и избежите их на своих деловых предприятиях в будущем.
-                  <br />
-                  Чтобы максимально использовать это преимущество, вы должны активно выделять время, чтобы признать ошибки и позволить себе учиться на них. Воспринимайте свои ошибки не как негатив, а как возможность расти и развиваться.
+                <span className="module__price text-price">
+                  <span>2 574</span> р.
+                </span>
+
+                <div className="button__wrap">
+                  <button className="module__button module__button-buy">
+                    <span className="button__text">Купить</span>
+                  </button>
+                </div>
+
+                <Lock className="module__lock" />
+              </div>
+            </div>
+
+            <div className="module__card module__card-lock">
+              <Communication className="module__icon" />
+
+              <div className="module__description">
+                <span className="module__number">Модуль 4.</span>
+
+                <h4 className="module__title">Коммуникация</h4>
+
+                <p className="module__description">
+                  Отправить письмо партнеру, презентовать проект инвестору - это
+                  все коммуникация. Основные правила для конструктивного
+                  общения.
                 </p>
               </div>
 
-              <div className="article__block article__block-right">
-                <h5 className="block__head">
-                  <span className="head__number">2</span>
-                  Работайте над тем, чем <br /> вы увлечены
-                </h5>
+              <div className="module__buttons">
+                <button className="module__button module__button-start">
+                  <span className="button__text">Начать</span>
+                </button>
 
-                <p className="block__paragraph">
-                  Компании, которые в конечном итоге преуспевают, просто делают меньше ошибок. Вот почему открытие бизнеса в молодом возрасте может быть таким полезным. Прежде чем вы станете взрослым, вы узнаете обо всех небольших ошибках, которые вы совершили в первый раз, и избежите их на своих деловых предприятиях в будущем.
-                  <br />
-                  Чтобы максимально использовать это преимущество, вы должны активно выделять время, чтобы признать ошибки и позволить себе учиться на них. Воспринимайте свои ошибки не как негатив, а как возможность расти и развиваться.
+                <span className="module__price text-price">
+                  <span>2 574</span> р.
+                </span>
+
+                <div className="button__wrap">
+                  <button className="module__button module__button-buy">
+                    <span className="button__text">Купить</span>
+                  </button>
+                </div>
+
+                <Lock className="module__lock" />
+              </div>
+            </div>
+
+            <div className="module__card module__card-lock">
+              <Finances className="module__icon" />
+
+              <div className="module__description">
+                <span className="module__number">Модуль 5.</span>
+
+                <h4 className="module__title">Финансы</h4>
+
+                <p className="module__description">
+                  Разница между группой и командой. Лидерство - что это?
+                  Лидерами рождаются или становятся? Собрать команду которая
+                  работает как единый механизм.
                 </p>
               </div>
 
-              <div className="article__block">
-                <h5 className="block__head">
-                  <span className="head__number">3</span>
-                  Идея: стремиться решить <br /> проблему и исполнить желание
-                </h5>
+              <div className="module__buttons">
+                <button className="module__button module__button-start">
+                  <span className="button__text">Начать</span>
+                </button>
 
-                <p className="block__paragraph">
-                  Придумывая идею для своего бизнеса, помните, что ваш продукт или услуга должны либо решить проблему, либо удовлетворить желание. Если возможно сделать и то, и другое, вы получили золото. Как автоматическое устройство для кормления собак из чистого золота ... ладно, может быть, это не очень хорошая идея, но это просто пример.
-                  <br />
-                  Возможно, лучшим примером будет продукт, который поможет вам вырастить сад в пригороде и будет способствовать устойчивости сообщества. Да, это лучше, но, к сожалению, это уже придумал 19-летний новозеландский гений, который сейчас учится в Университете Дьюка, который сделал свежие продукты в пригородных районах доступными и стильными. Проблема решена и желание выполнено. Проверьте и еще раз проверьте!
-                </p>
+                <span className="module__price text-price">
+                  <span>2 574</span> р.
+                </span>
 
-                <p className="block__paragraph">
-                  Прежде чем вы остановитесь на идее, убедитесь, что вы сделали нужные исследования, чтобы лучше понять рынок, на который вы рассчитываете выйти. Ищите недостатки в других продуктах и услугах и попробуйте заполнить пробел.
-                  <br />
-                  Определите проблему и постарайтесь решить ее — просто, правда?
-                </p>
+                <div className="button__wrap">
+                  <button className="module__button module__button-buy">
+                    <span className="button__text">Купить</span>
+                  </button>
+                </div>
+
+                <Lock className="module__lock" />
               </div>
-
-              <div className="article__block article__block-right">
-                <h5 className="block__head">
-                  <span className="head__number">4</span>
-                  Найдите время, чтобы активно развивать свои предпринимательские навыки
-                </h5>
-
-                <p className="block__paragraph">
-                  Есть несколько способов превратиться из обычного ученика средней школы в предприимчивого бога!
-                </p>
-
-                <p className="block__paragraph">
-                  Вам стоит развить свои предпринимательские таланты. Вы можете сделать это, общаясь с единомышленниками на мероприятиях, встречах в сети, или увлекательных образовательных турах.
-                </p>
-
-                <p className="block__paragraph">
-                  Вы можете даже связаться с более опытным предпринимателем, который может стать вашим ментором. Кто-то у кого вы будете учиться, напитываться и спрашивать совета, когда это необходимо. Кто-то, кто станет вашим гуру развития бизнеса; йодой финансирования; и сенсеем стратегических решений.
-                </p>
-              </div>
-
-              <div className="article__block">
-                <h5 className="block__head">
-                  <span className="head__number">5</span>
-                  Работа, работа, работа,<br /> работа
-                </h5>
-
-                <p className="block__paragraph">
-                  Это само собой разумеется, но начать бизнес нелегко, особенно когда вы работаете с ограниченными ресурсами подростка. Это будет непросто. Работать придется в школе (тссс), после школы, до школы и даже по выходным! Вам придется пожертвовать временем, но поверьте, оно того стоит.
-                </p>
-
-                <p className="block__paragraph">
-                  Кроме того, если вы действительно увлечены своим делом, то никогда не будет казаться, что вы на самом деле делаете работу. Это будет больше похоже на то, что вы занимаетесь хобби. Наконец, постарайтесь всегда помнить о своей идее. Вы никогда не знаете, когда внезапно возникнет вспышка вдохновения.
-                </p>
-
-                <p className="block__paragraph">
-                  Ну, ребята, вот и все! Теперь вы достаточно подготовлены, чтобы начать пробовать создавать свой собственный бизнес. Да, это так просто. И так, чего же вы ждете? Начинайте изучать наш курс и... делать ошибки!
-                </p>
-              </div>
-
-              <div className="article__block article__block-quote">
-                <Quote className="quote-top" />
-
-                <h4 className="quote">
-                  Есть несколько способов превратиться <br />
-                  из обычного ученика средней школы <br />
-                  в предприимчивого бога!
-
-                  <span className="quote__author">Нил Блюменталь</span>
-                </h4>
-
-                <Quote className="quote-bottom" />
-              </div>
-
             </div>
           </div>
 
-          <NavArrows />
+          <Gallery className={"skill__gallery"} />
 
-          <Callback />
+          <div className="skill__all">
+            <span className="module__price text-price">
+              <span>12 990</span> р.
+            </span>
+
+            <div className="button__wrap">
+              <button className="skill__buy button-def"><span>Купить весь курс</span></button>
+            </div>
+          </div>
+        </div>
+
+        <div className="skill__container skill__container-soft">
+          <h2 className="skill__title">Soft Skills</h2>
+
+          <p className="skill__description">
+            Позволяют быть успешным независимо от специфики деятельности и
+            направления, в котором работает человек.
+          </p>
+
+          <div className="skill__gallery skill__gallery-unslick">
+            <div className="module__card module__card-buy">
+              <Product className="module__icon" />
+
+              <div className="module__description">
+                <span className="module__number">Модуль 1.</span>
+
+                <h4 className="module__title">Формирование продукта</h4>
+
+                <p className="module__description">
+                  Разница между бизнесом и стартапом. Из каких компонентов
+                  состоит любой бизнес, а также без чего он не возможен. Что
+                  такое MVP. Как и для чего составлять бизнес модель.
+                </p>
+              </div>
+
+              <div className="module__buttons">
+                <button className="module__button module__button-start">
+                  <span className="button__text">Начать</span>
+                </button>
+
+                <span className="module__price text-price">
+                  <span>2 574</span> р.
+                </span>
+
+                <div className="button__wrap">
+                  <button className="module__button module__button-buy">
+                    <span className="button__text">Купить</span>
+                  </button>
+                </div>
+
+                <Lock className="module__lock" />
+              </div>
+            </div>
+
+            <div className="module__card module__card-buy">
+              <Metrics className="module__icon" />
+
+              <div className="module__description">
+                <span className="module__number">Модуль 1.</span>
+
+                <h4 className="module__title">Маркетинг</h4>
+
+                <p className="module__description">
+                  Понятие и портрет целевой аудитории. Выход продукта на
+                  рынок.Каналы продвижения. Смм, пиар.
+                </p>
+              </div>
+
+              <div className="module__buttons">
+                <button className="module__button module__button-start">
+                  <span className="button__text">Начать</span>
+                </button>
+
+                <span className="module__price text-price">
+                  <span>2 574</span> р.
+                </span>
+
+                <div className="button__wrap">
+                  <button className="module__button module__button-buy">
+                    <span className="button__text">Купить</span>
+                  </button>
+                </div>
+
+                <Lock className="module__lock" />
+              </div>
+            </div>
+
+            <div className="module__card module__card-buy">
+              <Auction className="module__icon" />
+
+              <div className="module__description">
+                <span className="module__number">Модуль 1.</span>
+
+                <h4 className="module__title">Юридические аспекты</h4>
+
+                <p className="module__description">
+                  Легальный бизнес в 16 - это миф? Что говорит закон про
+                  подростковый бизнес. Сколько нужно денег и куда идти чтобы
+                  легально стать бизнесменом.
+                </p>
+              </div>
+
+              <div className="module__buttons">
+                <button className="module__button module__button-start">
+                  <span className="button__text">Начать</span>
+                </button>
+
+                <span className="module__price text-price">
+                  <span>2 574</span> р.
+                </span>
+
+                <div className="button__wrap">
+                  <button className="module__button module__button-buy">
+                    <span className="button__text">Купить</span>
+                  </button>
+                </div>
+
+                <Lock className="module__lock" />
+              </div>
+            </div>
+
+            <div className="module__card module__card-buy">
+              <Finances className="module__icon" />
+
+              <div className="module__description">
+                <span className="module__number">Модуль 1.</span>
+
+                <h4 className="module__title">Финансы</h4>
+
+                <p className="module__description">
+                  Где брать деньги на развитие бизнеса? В каком финансовом
+                  состоянии бизнес на данный момент? Кто такие инвесторы и
+                  бизнес - ангелы. Какой инвестор нужен?
+                </p>
+              </div>
+
+              <div className="module__buttons">
+                <button className="module__button module__button-start">
+                  <span className="button__text">Начать</span>
+                </button>
+
+                <span className="module__price text-price">
+                  <span>2 574</span> р.
+                </span>
+
+                <div className="button__wrap">
+                  <button className="module__button module__button-buy">
+                    <span className="button__text">Купить</span>
+                  </button>
+                </div>
+
+                <Lock className="module__lock" />
+              </div>
+            </div>
+
+            <div className="module__card module__card-buy">
+              <Control className="module__icon" />
+
+              <div className="module__description">
+                <span className="module__number">Модуль 1.</span>
+
+                <h4 className="module__title">Управление проектом</h4>
+
+                <p className="module__description">
+                  Понять эффективность проекта. Планировать и организовывать
+                  работу с наибольшей эффективностью. Модель спиральной динамики
+                  развития проекта.
+                </p>
+              </div>
+
+              <div className="module__buttons">
+                <button className="module__button module__button-start">
+                  <span className="button__text">Начать</span>
+                </button>
+
+                <span className="module__price text-price">
+                  <span>2 574</span> р.
+                </span>
+
+                <div className="button__wrap">
+                  <button className="module__button module__button-buy">
+                    <span className="button__text">Купить</span>
+                  </button>
+                </div>
+
+                <Lock className="module__lock" />
+              </div>
+            </div>
+          </div>
+
+          <Gallery className={"skill__gallery"} />
+
+          <div className="skill__all">
+            <span className="module__price text-price">
+              <span>12 990</span> р.
+            </span>
+
+            <div className="button__wrap">
+              <button className="skill__buy button-def"><span>Купить весь курс</span></button>
+            </div>
+          </div>
         </div>
       </main>
 
