@@ -162,45 +162,9 @@ function App() {
             </div>
           </div>
 
-          <div className="arrows__container">
-            <div className="button__wrap border-prev">
-              <button className="page__arrow page__arrow-prev">
+          <NavArrows />
 
-                <Arrow />
-              </button>
-            </div>
-            <div className="button__wrap border-next">
-              <button className="page__arrow page__arrow-next">
-
-                <Arrow />
-              </button>
-            </div>
-          </div>
-
-          <div className="callback__container">
-            <div className="button__wrap border-callback">
-              <button className="callback__button">
-
-                <span>Перейти к следующему модулю</span>
-              </button>
-            </div>
-
-            <div className="button__wrap border-callback">
-              <button className="callback__button">
-
-                <span>Вопрос эксперту </span>
-              </button>
-            </div>
-
-            <div className="button__wrap border-callback">
-              <a className="callback__button" href="localhost:3000">
-
-                <span>
-                  Поддержка <Telegram />
-                </span>
-              </a>
-            </div>
-          </div>
+          <Callback />
         </div>
       </main>
 

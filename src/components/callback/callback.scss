@@ -1,22 +1,34 @@
 @import "./../../styles/abstracts/mixin";
 
 .callback__button {
+  padding: 12px 30px;
+  width: 100%;
+  height: 100%;
+  min-width: 230px;
+  position: relative;
   border-radius: 41px;
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
   text-align: center;
   background: #F5F3FA;
-  padding: 12px 50px;
 
   span {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
     svg {
-      position: relative;
-      left: 10px;
+      position: absolute;
+      right: 16%;
+
+      @include media((position: (mobile: relative),
+          min-width: (mobile: unset),
+          left: (mobile: 10px),
+          top: (mobile: 3px),
+          right: (mobile: unset)));
     }
   }
 
@@ -37,6 +49,15 @@
 
   .callback__button {
     @include media((width: (mobile: 100%)));
+  }
+
+  .button__wrap:last-child {
+    span {
+      left: 45%;
+
+      @include media((left: (mobile: 50%),
+          top: (mobile: 48%)));
+    }
   }
 
   .button__wrap:nth-child(1),

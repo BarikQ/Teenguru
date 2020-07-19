@@ -96,18 +96,19 @@ ul {
   justify-content: space-between;
   align-items: center;
   align-self: flex-end;
+
+  .button__wrap {
+    display: block;
+  }
 }
 
 .module__button {
   font-size: 14px;
   font-weight: 600;
   border-radius: 61px;
-  height: 41px;
+  height: 42px;
   padding: 12px 18px;
   background: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .skill__container {
@@ -119,6 +120,7 @@ ul {
 .button__wrap {
   .skill__buy {
     background: #F5F3FA;
+    display: block;
   }
 }
 
@@ -126,11 +128,19 @@ ul {
   display: flex;
   align-items: center;
   margin-top: 40px;
+  flex-wrap: wrap;
 
-  @include media((margin-top: (tablet: 20px)));
+  @include media((margin-top: (tablet: 0)));
 
   .button__wrap {
     margin-left: 12px;
+
+    @include media((margin-left: (mobile: 5px)));
+  }
+
+  .module__price,
+  .button__wrap {
+    @include media((margin: (mobile: 5px), ));
   }
 }
 
@@ -166,7 +176,7 @@ ul {
   width: 194px;
   flex: 0 0 auto;
 
-  @include media ((margin: (tablet: 0 15px)));
+  @include media ((margin: (tablet: 0 10px)));
 
   .button__wrap {
     button {

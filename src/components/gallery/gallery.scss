@@ -21,7 +21,8 @@ $d_flex: flex !important;
 
   @include media((display: (tablet: flex),
       overflow-x: (tablet: scroll),
-      margin: (tablet: 12px 20px 0)));
+      margin: (tablet: 12px 0 0 0),
+      padding: (tablet: 15px 0 15px 20px)));
 
   .gallery__arrow {
     width: 40px;
@@ -37,6 +38,17 @@ $d_flex: flex !important;
       transform: translate(-50%, -50%);
     }
   }
+}
+
+.skill__gallery:last-child::after {
+  content: "";
+  display: none;
+  width: 10px;
+  padding: 0;
+  min-height: 355px;
+
+  @include media((display: (tablet: block),
+      padding: (tablet: 0 10px)));
 }
 
 .gallery__nav-next {
