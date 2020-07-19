@@ -29,6 +29,8 @@ function App() {
       <RouteLine />
 
       <main className="main">
+        <Menu />
+
         <div className="skill__container skill__container-hard">
           <h2 className="skill__title">Hard Skills</h2>
 
