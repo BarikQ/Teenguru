@@ -15,7 +15,6 @@ $d_flex: flex !important;
 }
 
 .skill__gallery {
-  margin-top: 20px;
   margin: 20px 0 0 0;
   justify-content: space-between;
 
@@ -76,6 +75,75 @@ $d_flex: flex !important;
 
 .slick-slide>div {
   padding: 0 15px;
+  // display: flex;
+  // justify-content: center;
+  height: 100%;
+}
+
+.slick-track {
   display: flex;
-  justify-content: center;
+
+  .slick-slide {
+    display: flex;
+    height: auto;
+    align-items: center; //optional
+    justify-content: center; //optional
+  }
+}
+
+.module__wrapper {
+  // padding: 0 15px;
+  height: 100%;
+
+  @include media((margin: (tablet: 0 10px)));
+}
+
+.module__wrapper:first-child {
+  margin-left: 0;
+}
+
+.module__wrapper:last-child {
+  margin-right: 0;
+}
+
+.module__card {
+  height: 100%;
+  // min-height: 312px;
+  // min-height: 355px;
+  // width: 194px;
+  // max-width: 194px;
+  box-sizing: border-box;
+  padding: 15px;
+  display: grid !important;
+  grid-template: 50px auto auto / 1fr;
+  flex: 0 0 auto;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+
+  @include media ((margin: (tablet: 0 10px),
+      min-height: (tablet: 355px),
+      width: (tablet: 194px),
+      max-width: (tablet: 194px),
+      box-sizing: (tablet: unset)));
+
+  .button__wrap {
+    button {
+      background: white;
+      width: 100%;
+    }
+  }
+
+  .button__wrap:hover {
+    button {
+      background: transparent;
+    }
+  }
+}
+
+.module__card:first-child {
+  @include media((margin-left: (tablet: 0)));
+}
+
+.module__card:last-child {
+  @include media((margin-right: (tablet: 0)));
 }

@@ -91,7 +91,7 @@ ul {
 }
 
 .module__buttons {
-  margin-top: 13px;
+  margin-top: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -114,7 +114,7 @@ ul {
 .skill__container {
   max-width: 1240px;
   margin: 0 auto;
-  padding: 34px 0;
+  padding: 15px 0;
 
   @include media((padding: (laptop: 20px 0 0)));
 }
@@ -167,41 +167,6 @@ ul {
       -webkit-background-clip: text;
     }
   }
-}
-
-.module__card {
-  padding: 15px 15px 20px;
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.05);
-  border-radius: 10px;
-  display: grid !important;
-  grid-template: 50px auto auto / 1fr;
-  min-height: 355px;
-  max-width: 194px;
-  width: 194px;
-  flex: 0 0 auto;
-
-  @include media ((margin: (tablet: 0 10px)));
-
-  .button__wrap {
-    button {
-      background: white;
-      width: 100%;
-    }
-  }
-
-  .button__wrap:hover {
-    button {
-      background: transparent;
-    }
-  }
-}
-
-.module__card:first-child {
-  @include media((margin-left: (tablet: 0)));
-}
-
-.module__card:last-child {
-  @include media((margin-right: (tablet: 0)));
 }
 
 .module__card-open {
