@@ -7,4 +7,6 @@ export { default as NavArrows } from "./navArrows/navArrows";
 export { default as RouteLine } from "./routeLine/routeLine";
 export { default as Strengths } from "./strengths/strengths";
 export { default as ModuleBox } from "./moduleBox/moduleBox";
-export { default as Table } from "./table/table"; 
+export { default as Table } from "./table/table";
+export { default as Presentation } from "./presentation/presentation";
+export { default as PresGallery } from "./presGallery/presGallery"; 

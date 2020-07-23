@@ -2,9 +2,6 @@ import React from "react";
 
 import "./list.scss";
 
-import { ReactComponent as Star } from "./../../assets/images/list/star.svg";
-import { ReactComponent as Circle } from "./../../assets/images/list/circle.svg";
-
 export default function ArticleList() {
   return (
     <ul className="article__list">

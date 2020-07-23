@@ -115,6 +115,8 @@ ul {
   max-width: 1240px;
   margin: 0 auto;
   padding: 34px 0;
+
+  @include media((padding: (laptop: 20px 0 0)));
 }
 
 .button__wrap {
@@ -129,8 +131,10 @@ ul {
   align-items: center;
   margin-top: 40px;
   flex-wrap: wrap;
+  height: 42px;
 
-  @include media((margin-top: (tablet: 0)));
+  @include media((margin-top: (tablet: 0),
+      display: (tablet: none)));
 
   .button__wrap {
     margin-left: 12px;
