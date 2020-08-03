@@ -1,9 +1,9 @@
 @import "./../../styles/abstracts/mixin";
 
 .header {
-  padding: 20px 0;
+  padding: 20px 100px;
   margin: 0 auto;
-  max-width: 1240px;
+  // max-width: 1240px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,7 +44,8 @@ h1 {
 
   @include media((margin: (tablet: 0 0 0),
       font-size: (tablet: 21px, mobile: 17px),
-      width: (tablet: 82px)));
+      width: (tablet: 82px),
+      max-width: (sm_laptop: 258px)));
 }
 
 .header__logos {
@@ -53,9 +54,8 @@ h1 {
   align-items: center;
   position: relative;
   top: 2px;
-  left: -53px;
 
-  @include media((left: (sm_laptop: -40px),
+  @include media((left: (sm_laptop: 0),
       display: (tablet: none),
     ));
 
@@ -80,4 +80,40 @@ h1 {
   font-weight: 500;
   color: #292929;
   margin-left: 12px;
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  white-space: nowrap;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  font-family: "Montserrat";
+
+  @include media((margin-right: (tablet: 35px),
+      flex-wrap: (tablet: wrap)));
+}
+
+.header__action {
+  margin: 0 10px;
+  color: black;
+
+  @include media((margin: (tablet: 5px)));
+}
+
+.action__prim {
+  margin-right: 0;
+
+  button {
+    padding: 0 20px;
+  }
+
+  .button__text {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
 }

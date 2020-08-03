@@ -5,7 +5,7 @@ import "./header.scss";
 import imaguruSrc from "./../../assets/images/header/dist/imaguru.png";
 import teenguruSrc from "./../../assets/images/header/dist/teenguru.png";
 import britishSrc from "./../../assets/images/header/dist/british.png";
-import userSrc from "./../../assets/images/header/dist/user.png";
+// import userSrc from "./../../assets/images/header/dist/user.png";
 
 export default function Header() {
   return (
@@ -24,10 +24,21 @@ export default function Header() {
         <img src={britishSrc} className="header__logo british" alt="#" />
       </div>
 
-      <a href="localhost:3000" className="header__user">
-        <img src={userSrc} alt="user-pic" className="user-pic" />
-        <span className="user-name">Евгений</span>
-      </a>
+      <div className="header__actions">
+        <a className="action__sub header__action" href="localhost:3000">Войти</a>
+
+        <div className="button__wrap action__prim header__action">
+          <button className="action__button">
+            <span className="button__text">РЕГИСТРАЦИЯ</span>
+          </button>
+        </div>
+
+
+        {/* <a href="localhost:3000" className="header__user">
+          <img src={userSrc} alt="user-pic" className="user-pic" />
+          <span className="user-name">Евгений</span>
+        </a> */}
+      </div>
     </header>
   );
 }
