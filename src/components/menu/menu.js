@@ -247,6 +247,7 @@ export default function Menu() {
               </div>
             </div>
           </li>
+
           <li>
             <div className="menu__module menu__module-close">
               <input
@@ -291,6 +292,7 @@ export default function Menu() {
               </div>
             </div>
           </li>
+
           <li>
             <div className="menu__module menu__module-close">
               <input
@@ -335,6 +337,7 @@ export default function Menu() {
               </div>
             </div>
           </li>
+
           <li>
             <div className="menu__module menu__module-close">
               <input
@@ -379,6 +382,7 @@ export default function Menu() {
               </div>
             </div>
           </li>
+
           <li>
             <div className="menu__module menu__module-close">
               <input
@@ -423,6 +427,7 @@ export default function Menu() {
               </div>
             </div>
           </li>
+
           <li>
             <div className="menu__module menu__module-close">
               <input
@@ -467,6 +472,7 @@ export default function Menu() {
               </div>
             </div>
           </li>
+
           <li>
             <div className="menu__module menu__module-close">
               <input
@@ -511,6 +517,7 @@ export default function Menu() {
               </div>
             </div>
           </li>
+
           <li>
             <div className="menu__module menu__module-close">
               <input
@@ -555,6 +562,7 @@ export default function Menu() {
               </div>
             </div>
           </li>
+
           <li>
             <div className="menu__module menu__module-close">
               <input

@@ -24,10 +24,10 @@ export default function Header() {
         <img src={britishSrc} className="header__logo british" alt="#" />
       </div>
 
-      <div className="header__actions">
-        <a className="action__sub header__action" href="localhost:3000">Войти</a>
+      <div className="user__actions">
+        <a className="action__sub user__action" href="localhost:3000">Войти</a>
 
-        <div className="button__wrap action__prim header__action">
+        <div className="button__wrap action__prim user__action">
           <button className="action__button">
             <span className="button__text">РЕГИСТРАЦИЯ</span>
           </button>
