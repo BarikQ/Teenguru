@@ -52,11 +52,11 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
-  top: 2px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 2px);
 
-  @include media((left: (sm_laptop: 0),
-      display: (tablet: none),
+  @include media((display: (tablet: none),
     ));
 
   .teenguru {
