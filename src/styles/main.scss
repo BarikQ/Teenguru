@@ -6,14 +6,19 @@
   padding: 0;
 }
 
+.root {
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   background: #F5F3FA;
   position: relative;
-  padding-bottom: 72px;
-  min-height: 100vh;
+  // padding-bottom: 72px;
+  // min-height: 100vh;
   box-sizing: border-box;
 
-  @include media((padding-bottom: (tablet: 145px)));
+  // @include media((padding-bottom: (tablet: 145px)));
 }
 
 ul {

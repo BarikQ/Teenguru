@@ -1,13 +1,15 @@
 @import "./../../styles/abstracts/mixin";
 
 .footer {
-  background: #00092B;
-  position: absolute;
-  bottom: 0;
   width: 100%;
+  // margin-top: 30px;
+  padding: 20px 40px;
   box-sizing: border-box;
+  background: #00092B;
+  // position: absolute;
+  // bottom: 0;
 
-  @include media((padding: (laptop: 0 40px)));
+  @include media((padding: (tablet: 28px 0)));
 }
 
 .footer__container {
@@ -16,11 +18,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
 
   @include media((flex-direction: (tablet: column),
-      text-align: (tablet: center),
-      padding: (tablet: 28px 0)));
+      text-align: (tablet: center)));
 }
 
 .social__list {
@@ -65,4 +65,12 @@
       }
     }
   }
+}
+
+.social__item:last-child {
+  margin-right: 0;
+}
+
+.social__item:first-child {
+  margin-left: 0;
 }

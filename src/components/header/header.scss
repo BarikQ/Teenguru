@@ -1,12 +1,8 @@
 @import "./../../styles/abstracts/mixin";
 
 .header {
-  padding: 20px 100px;
-  margin: 0 auto;
   // max-width: 1240px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding: 20px 40px;
   position: relative;
   top: 0;
   left: 0;
@@ -16,6 +12,23 @@
   @include media((padding: (laptop: 20px 40px, tablet: 15px 20px),
       position: (tablet: sticky),
       background-color: (tablet: #F5F3FA),
+      width: (tablet: 100%),
+      box-sizing: (tablet: border-box)));
+}
+
+.header__wrap {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 0;
+  left: 0;
+
+  @include media((background-color: (tablet: #F5F3FA),
       width: (tablet: 100%),
       box-sizing: (tablet: border-box)));
 }
